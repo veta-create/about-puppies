@@ -9,19 +9,19 @@ function Header() {
             </div>
             <div className={styles.navigation}>
                 <nav>
-                    <a href="#">OUR SERVICES</a>
-                    <a href="#">ABOUT US</a>
-                    <a href="#">PRODUCTS</a>
-                    <a href="#">PET CARE</a>
-                    <a href="#">CONTACT</a>
+                    <a href="#">Our services</a>
+                    <a href="#">About us</a>
+                    <a href="#">Products</a>
+                    <a href="#">Pet care</a>
+                    <a href="#">Contact</a>
                 </nav>
             </div>
             <div className={styles.auth}>
                 <div className={styles.sign}>
-                    <button>SIGN IN</button>
+                    <button>Sign in</button>
                 </div>
                 <div className={styles.register}>
-                    <button>REGISTER</button>
+                    <button>Register</button>
                 </div>
             </div>
         </div>

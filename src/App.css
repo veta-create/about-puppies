@@ -3,11 +3,9 @@
 }
 
 .App .mainContent {
-  width: 1440px;
-  height: 1080px;
+  width: 85%;
+  height: 2000px;
   margin-left: auto;
   margin-right: auto;
-
-  background-color: rgb(199, 143, 59);
 }
 
