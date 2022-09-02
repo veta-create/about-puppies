@@ -1,0 +1,72 @@
+.header {
+    width: 1440px;
+    height: 104px;
+    display: grid;
+    grid-template-columns: 313px 700px 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.header .logo {
+}
+
+.header .logo div {
+  float: left;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+.header .navigation {
+}
+
+.header .navigation a {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 92px;
+    height: 10px;
+    margin-right: 52px;
+    margin-top: 56px;
+
+   white-space: nowrap;
+   font-family: 'Glades Bold';
+   font-style: normal;
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+
+   color: black;
+}
+
+.header .navigation a:last-child {
+    margin-right: 16px;
+}
+
+
+
+.header .auth {
+
+
+    background-color: aqua;
+}
+
+.header .auth .sign button {
+    display: inline-block;
+    width: 146px;
+    height: 49px;
+    left: 963px;
+    top: 42px;
+
+    background: #124C5F;
+    border: none;
+    border-radius: 5px;
+}
+
+.header .auth .register button {
+    display: inline-block;
+    width: 146px;
+    height: 49px;
+    left: 963px;
+    top: 42px;
+}
