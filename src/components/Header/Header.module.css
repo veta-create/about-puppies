@@ -32,6 +32,10 @@
     color: black;
 }
 
+.header .navigation a:hover {
+  color: #FFAA00;
+}
+
 .header .navigation a:last-child {
     margin-right: 3%;
 }
