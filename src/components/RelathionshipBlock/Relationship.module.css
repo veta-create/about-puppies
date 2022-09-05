@@ -1,0 +1,55 @@
+.main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+    position: absolute;
+    width: 35%;
+    height: 35%;
+    left: 15%;
+    bottom: 22%;
+
+    height: 352px;
+}
+
+.description h1 {
+    margin-top: none;
+    font-size: 3em;
+    text-align: left;
+    font-family: 'Pangolin', cursive;
+}
+
+.description p {
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Roboto', serif;
+    
+    color: #181817;
+}
+
+.description button {
+    display: flex;
+    float: left;
+    width: 35%;
+    height: 18%;
+    margin-top: 5%;
+    font-size: 1.2em;
+    font-family: 'Alegreya', serif;
+
+    color: #FFF;
+    background-color: #124C5F;
+    border: none;
+    border-radius: 5px;
+}
+
+.description button div {
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.description button .arrow {
+    margin-left: 7%;
+    margin-top: 12%;
+}
