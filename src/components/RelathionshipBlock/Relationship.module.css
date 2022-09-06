@@ -1,6 +1,11 @@
+:root {
+    --position-img: 50% 40%;
+    --repeat-img: no-repeat;
+}
+
 .main {
   width: 95%;
-  height: 48em;
+  height: 100em;
   margin-left: auto;
   margin-right: auto;
   margin-top: -2em;
@@ -40,6 +45,7 @@
     width: 35%;
     height: 18%;
     margin-top: 5%;
+    cursor: pointer;
     font-size: 1.2em;
     font-family: 'Alegreya', serif;
 
@@ -59,3 +65,93 @@
     margin-left: 5%;
 }
 
+.services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 225px;
+    height: 25em;
+}
+
+.services .navContainer nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0 -0.5em;
+}
+
+.services .navContainer nav div {
+    margin: 0 2em;
+    width: 12em;
+    height: 14em;
+    cursor: pointer;
+
+    background-color: #fff;
+    border: 1px solid #98F2E1;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #C7E7E1;
+}
+
+.services .navContainer nav div:hover {
+    transform: scale(0.9);
+}
+
+.services .navContainer nav div:nth-child(2n) {
+    border: 1px solid #FFEE94;
+  }
+
+.services .navContainer nav div a {
+    display: block;
+    margin-top: 80%;
+    font-size: 1.5em;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+
+    color: #000;
+}
+
+.services .header {
+    margin-bottom: 2em;
+    margin-left: 8%;
+    text-align: left;
+}
+
+.services .header::after {
+    display: block;
+    margin-top: -1em;
+    content: url(../../assets/images/line-under-services.png);
+}
+
+.services .header h1 {
+    font-size: 1.7em;
+    font-family: 'Pangolin', cursive;
+}
+
+.services .navContainer nav .grooming {
+    margin-left: 8%;
+    background-image: url(../../assets/images/grooming.png);
+    background-repeat: var(--repeat-img);
+    background-position: var(--position-img);
+}
+
+.services .navContainer nav .healthcare {
+    background-image: url(../../assets/images/healthcare.png), linear-gradient(#FFEE94, #FFF 80%);
+    background-repeat: var(--repeat-img);
+    background-position: var(--position-img);
+}
+
+.services .navContainer nav .daycare {
+    background-image: url(../../assets/images/daycare.png);
+    background-repeat: var(--repeat-img);
+    background-position: var(--position-img);
+}
+
+.services .navContainer nav .training {
+    background-image: url(../../assets/images/training.png), linear-gradient(#FFEE94, #FFF 80%);
+    background-repeat: var(--repeat-img);
+    background-position: var(--position-img);
+}
+
+.services .navContainer nav .hyginic {
+    background-image: url(../../assets/images/hyginic-care.png);
+    background-repeat: var(--repeat-img);
+    background-position: var(--position-img);
+}
