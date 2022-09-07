@@ -1,3 +1,9 @@
+:root {
+    --header-font-family: 'Alegreya', serif;
+    --header-text-transform: uppercase;
+    --header-font-weight: bold;
+}
+
 .header {
     width: 85%;
     height: 104px;
@@ -23,9 +29,9 @@
 
 
     white-space: nowrap;
-    font-family: 'Alegreya', serif;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-family: var(--header-font-family);
+    text-transform: var(--header-text-transform);
+    font-weight: var(--header-font-weight);
     font-size: 100%;
     text-decoration: none;
 
@@ -42,17 +48,19 @@
 
 .header .auth {
     display: flex;
+    height: 104px;
     flex-direction: row;
 }
 
-.header .auth .sign button {
-    width: 10em;
-    height: 4em;
-    margin-top: 17%;
+.header .auth .sign {
+    width: 35%;
+    height: 50px;
+    margin-top: 5%;
+    cursor: pointer;
 
-    font-family: 'Alegreya', serif;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-family: var(--header-font-family);
+    text-transform: var(--header-text-transform);
+    font-weight: var(--header-font-weight);
 
     color: #FFFFFF;
     background: #124C5F;
@@ -60,15 +68,22 @@
     border-radius: 5px;
 }
 
-.header .auth .register button {
-    width: 10em;
-    height: 4em;
-    margin-top: 17%;
-    margin-left: 10%;
 
-    font-family: 'Alegreya', serif;
-    text-transform: uppercase;
-    font-weight: bold;
+.header .auth .sign:hover, .header .auth .register:hover {
+    text-decoration: underline;
+}
+
+
+.header .auth .register {
+    width: 35%;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: 5%;
+    cursor: pointer;
+
+    font-family: var(--header-font-family);
+    text-transform: var(--header-text-transform);
+    font-weight: var(--header-font-weight);
 
     color: #124C5F;
     background: #C7E7E1;

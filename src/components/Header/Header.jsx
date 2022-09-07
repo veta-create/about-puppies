@@ -17,12 +17,8 @@ function Header() {
                 </nav>
             </div>
             <div className={styles.auth}>
-                <div className={styles.sign}>
-                    <button>Sign in</button>
-                </div>
-                <div className={styles.register}>
-                    <button>Register</button>
-                </div>
+                <button className={styles.sign}>Sign in</button>
+                <button className={styles.register}>Register</button>
             </div>
         </div>
     )
