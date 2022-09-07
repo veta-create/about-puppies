@@ -8,7 +8,7 @@ export function RelationshipBlock () {
             <div className={styles.description}>
                 <h1>Taking care<br /> for you Smart Dog !</h1>
                 <p>Human-canine bonding is the relationship<br /> between dogs and humans</p>
-                <button>Explore more</button>
+                <button><span>Explore more</span></button>
             </div>
 
             <div>
