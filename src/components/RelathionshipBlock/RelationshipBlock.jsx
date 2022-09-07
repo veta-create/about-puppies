@@ -11,9 +11,6 @@ export function RelationshipBlock () {
                 <button><span>Explore more</span></button>
             </div>
 
-            <div>
-                <img src={dog} />
-            </div>
            </div>
 
             <div className={styles.services}>
