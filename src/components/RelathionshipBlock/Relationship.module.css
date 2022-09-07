@@ -71,6 +71,7 @@
     padding-top: 18%;
     padding-left: 5%;
     display: flex;
+    justify-content: flex-start; 
     flex-direction: column;
 
 }
