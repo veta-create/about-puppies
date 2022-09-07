@@ -2,6 +2,10 @@
     --header-font-family: 'Alegreya', serif;
     --header-text-transform: uppercase;
     --header-font-weight: bold;
+    --header-navigation-hover: #FFAA00;
+    --button-sign-background: #124C5F;
+    --button-register-background: #C7E7E1;
+    --button-register-color: #124C5F;
 }
 
 .header {
@@ -39,7 +43,7 @@
 }
 
 .header .navigation a:hover {
-  color: #FFAA00;
+  color: var(--header-navigation-hover);
 }
 
 .header .navigation a:last-child {
@@ -63,7 +67,7 @@
     font-weight: var(--header-font-weight);
 
     color: #FFFFFF;
-    background: #124C5F;
+    background: var(--button-sign-background);
     border: none;
     border-radius: 5px;
 }
@@ -85,8 +89,8 @@
     text-transform: var(--header-text-transform);
     font-weight: var(--header-font-weight);
 
-    color: #124C5F;
-    background: #C7E7E1;
+    color: var(--button-register-color);
+    background: var(--button-register-background);
     border: none;
     border-radius: 5px;
 }
