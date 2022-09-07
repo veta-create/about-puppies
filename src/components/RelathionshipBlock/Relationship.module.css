@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
 }
 
+.relationship {
+    display: flex;
+}
+
 .description {
     display: flex;
     flex-direction: column;
@@ -63,7 +67,7 @@
 .services {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
+
 }
 
 .services .navContainer nav{
@@ -120,31 +124,31 @@
 
 .services .navContainer nav .grooming {
     margin-left: 8%;
-    background-image: url(../../assets/images/grooming.png);
+    background-image: url(../../assets/images/grooming.svg);
     background-repeat: var(--repeat-img);
     background-position: var(--position-img);
 }
 
 .services .navContainer nav .healthcare {
-    background-image: url(../../assets/images/healthcare.png), linear-gradient(#FFEE94, #FFF 80%);
+    background-image: url(../../assets/images/healthcare.svg), linear-gradient(#FFEE94, #FFF 80%);
     background-repeat: var(--repeat-img);
     background-position: var(--position-img);
 }
 
 .services .navContainer nav .daycare {
-    background-image: url(../../assets/images/daycare.png);
+    background-image: url(../../assets/images/daycare.svg);
     background-repeat: var(--repeat-img);
     background-position: var(--position-img);
 }
 
 .services .navContainer nav .training {
-    background-image: url(../../assets/images/training.png), linear-gradient(#FFEE94, #FFF 80%);
+    background-image: url(../../assets/images/training.svg), linear-gradient(#FFEE94, #FFF 80%);
     background-repeat: var(--repeat-img);
     background-position: var(--position-img);
 }
 
 .services .navContainer nav .hyginic {
-    background-image: url(../../assets/images/hyginic-care.png);
+    background-image: url(../../assets/images/hyginic-care.svg);
     background-repeat: var(--repeat-img);
     background-position: var(--position-img);
 }
