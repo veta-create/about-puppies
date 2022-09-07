@@ -1,6 +1,15 @@
 :root {
     --position-img: 50% 40%;
     --repeat-img: no-repeat;
+    --button-description-background:  #124C5F;
+    --h1-font-family: 'Pangolin', cursive;
+    --description-font-family: 'Roboto', serif;
+    --description-color: #181817;
+    --services-font-family: 'Rubik', sans-serif;
+    --border-services-nav: #98F2E1;
+    --border-services-nav-2n: #FFEE94;
+    --box-shadow-services-nav: #C7E7E1;
+
 }
 
 .main {
@@ -29,15 +38,15 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 3em;
-    font-family: 'Pangolin', cursive;
+    font-family: var(--h1-font-family);
 }
 
 .description p {
     margin-top: 32px;
     margin-bottom: 0;
     font-size: 1.5em;
-    font-family: 'Roboto', serif;
-    color: #181817;
+    font-family: var(--description-font-family);
+    color: var(--description-color);
 }
 
 .description button {
@@ -51,7 +60,7 @@
     font-family: 'Alegreya', serif;
 
     color: #FFF;
-    background-color: #124C5F;
+    background-color: var(--button-description-background);
     border: none;
     border-radius: 5px;
 }
@@ -88,9 +97,9 @@
     cursor: pointer;
 
     background-color: #fff;
-    border: 1px solid #98F2E1;
+    border: 1px solid var(--border-services-nav);
     border-radius: 25px;
-    box-shadow: 0 0 10px #C7E7E1;
+    box-shadow: 0 0 10px var(--box-shadow-services-nav);
 }
 
 .services .navContainer nav div:hover {
@@ -98,14 +107,14 @@
 }
 
 .services .navContainer nav div:nth-child(2n) {
-    border: 1px solid #FFEE94;
+    border: 1px solid var(--border-services-nav-2n);
   }
 
 .services .navContainer nav div a {
     display: block;
     margin-top: 80%;
     font-size: 1.5em;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--services-font-family);
     text-align: center;
     text-decoration: none;
 
@@ -125,7 +134,7 @@
 
 .services .header h1 {
     font-size: 1.7em;
-    font-family: 'Pangolin', cursive;
+    font-family: var(--h1-font-family);
 }
 
 .services .navContainer nav .grooming {
