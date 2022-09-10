@@ -1,0 +1,103 @@
+:root {
+    --h1-font-family: 'Pangolin', cursive;
+    --description-font-family: 'Roboto', serif;
+    --description-color: #4E4C46;
+    --button-description-background:  #124C5F;
+    --button-learn-font-family: 'Rubik', sans-serif;
+    --button-description-font-family: 'Alegreya', serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    margin-top: 40px;
+}
+
+.description {
+    padding-top: 7%;
+
+    background-image: url(../../assets/images/paw.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.description h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3rem;
+    font-family: var(--h1-font-family);
+}
+
+.description p {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-family: var(--description-font-family);
+    color: var(--description-color);
+}
+
+.description button {
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    height: 80px;
+    padding: 18px 36px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: var(--button-description-font-family);
+
+    color: #FFF;
+    background-color: var(--button-description-background);
+    border: none;
+    border-radius: 5px;
+}
+
+.description button:hover {
+    transform: scale(1.1);
+    font-size: 1.3em;
+}
+
+.description button::after {
+    margin-left: 12px;
+    margin-top: 4px;
+    content: url(../../assets/images/arrow.svg);
+}
+
+.learn {
+   width: 50%;
+   background-image: url(../../assets/images/food.svg), url(../../assets/images/dog2.png);
+   background-position: 65% 85%;
+   background-repeat: no-repeat;
+}
+
+.learn div {
+    height: 160px;
+    width: 180px;
+    padding-top: 25px;
+    padding-left: 35px;
+    margin-left: 63%;
+    margin-top: 10%;
+    cursor: pointer;
+
+    background-image: url(../../assets/images/backgroundbutton.png);
+    background-repeat: no-repeat;
+}
+
+.learn div a {
+    font-size: 1rem;
+    font-family: var(--button-learn-font-family);
+
+    color: #FFF;
+}
+
+.learn div a::before {
+    display: block;
+    content: url(../../assets/images/playbutton.svg);
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.learn div:hover {
+    transform: rotate(5deg)
+}
