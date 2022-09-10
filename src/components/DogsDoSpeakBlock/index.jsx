@@ -1,10 +1,10 @@
-import styles from './DogsDoSpeakBlock.module.css'
+import styles from './style.module.css'
 
 export function DogsDoSpeakBlock() {
   return(
     <div className={styles.main}>
       <div className={styles.learn}>
-        <div><a>Learn more</a></div>
+        <div><a href='#'>Learn more</a></div>
       </div>
       <div className={styles.description}>
         <h1>Dogs do speak, but only to those<br /> who know how to listen.</h1>
