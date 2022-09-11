@@ -2,7 +2,7 @@ import styles from './style.module.css'
 
 export function RelationshipBlock () {
     return (
-        <div className={styles.main}>
+        <section className={styles.main}>
           <div className={styles.relationship}>
             <div className={styles.description}>
                 <h1>Taking care<br /> for you Smart Dog !</h1>
@@ -24,6 +24,6 @@ export function RelationshipBlock () {
                     </nav>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
