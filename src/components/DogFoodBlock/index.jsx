@@ -4,7 +4,8 @@ export function DogFoodBlock() {
     return (
         <section className={styles.main}>
             <div className={styles.header}><h1>Dog Nutrients & Food </h1></div>
-            <div className={styles.discount}><span>25 % OFF ALL</span> Products </div>
+            <div className={styles.discount}><span>25 % OFF ALL</span> Products</div>        
+            <button>View More</button> 
             <div className={styles.products}>
                 <nav>
                   <div className={styles.card}>

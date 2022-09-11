@@ -1,14 +1,13 @@
 :root {
     --base-font-fam: 'Rubik', sans-serif;
     --header-font-fam: 'Pangolin', cursive;
-    --base-color: #979697;
-    --button-bg: #FFF;
+    --base-color-p: #979697;
     --border-color: #124C5F;
     --button-color: #124C5F;
 }
 
 .main {
-    height: 900px;
+    height: 800px;
 }
 
 .main .header {
@@ -35,6 +34,35 @@
     font-weight: bold; 
 }
 
+.main button {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    margin-left: 70%;
+    margin-top: -4%;
+    padding-left: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'Alegreya', serif;
+    
+    color: #FFF;
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 5px;
+}
+
+.main button::after {
+    margin-left: 12px;
+    margin-top: 4px;
+    content: url(../../assets/images/arrow.svg);
+}
+
+.main button:hover {
+    transform: scale(1.1);
+    font-size: 1.3em;
+}
+
 .main .products nav  {
     display: flex;
     width: 85%;
@@ -46,7 +74,7 @@
  
 .main .products nav .card {
     width: 30%;
-    height: 560px;
+    height: 570px;
     font-family: var(--base-font-fam);
     font-size: 1.3rem;
 
@@ -60,6 +88,14 @@
     background-image: url(../../assets/images/food2.svg), url(../../assets/images/yellow-background.svg);
 }
 
+.main .products nav .card:nth-child(3) {
+    background-image: url(../../assets/images/food3.svg), url(../../assets/images/blue-background.svg);
+}
+
+.main .products nav .card:nth-child(3) button{
+    margin-top: 25px;
+}
+
 .main .products nav .card button {
     width: 190px;
     height: 55px;
@@ -68,8 +104,13 @@
     cursor: pointer;
 
     color: var(--button-color);
-    background-color: var(--button-bg);
+    background-color: #FFF;
     border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.main .products nav .card button:hover {
+    font-size: 1.5rem;
 }
 
 .main .products nav .card a {
