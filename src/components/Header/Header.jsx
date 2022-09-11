@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo.png'
 
 function Header() {
     return (
-        <div className={styles.header}>
+        <section className={styles.header}>
             <div className={styles.logo}>
                 <div><img alt='logo' src={logo}></img></div>
             </div>
@@ -20,7 +20,7 @@ function Header() {
                 <button className={styles.sign}>Sign in</button>
                 <button className={styles.register}>Register</button>
             </div>
-        </div>
+        </section>
     )
 }
 
