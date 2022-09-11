@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import Header from './components/Header/Header';
-import {RelationshipBlock} from './components/RelathionshipBlock/RelationshipBlock';
+import {RelationshipBlock} from './components/RelathionshipBlock/index';
 
 function App() {
   return (

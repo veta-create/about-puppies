@@ -1,5 +1,4 @@
-import styles from './Relationship.module.css'
-import dog from '../../assets/images/dog1.png'
+import styles from './style.module.css'
 
 export function RelationshipBlock () {
     return (
