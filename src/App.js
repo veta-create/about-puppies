@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header';
 import {RelationshipBlock} from './components/RelathionshipBlock/index';
 import {DogsDoSpeakBlock} from './components/DogsDoSpeakBlock/index'
+import { DogFoodBlock } from './components/DogFoodBlock';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <RelationshipBlock />
       <DogsDoSpeakBlock />
+      <DogFoodBlock />
       <div className='mainContent'>
 
       </div>

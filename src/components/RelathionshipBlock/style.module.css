@@ -125,7 +125,7 @@
 .services .header::after {
     display: block;
     margin-top: -2%;
-    content: url(../../assets/images/line-under-services.svg);
+    content: url(../../assets/images/underline.svg);
 }
 
 .services .header h1 {
