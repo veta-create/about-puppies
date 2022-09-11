@@ -1,0 +1,89 @@
+:root {
+    --base-font-fam: 'Rubik', sans-serif;
+    --header-font-fam: 'Pangolin', cursive;
+    --base-color: #979697;
+    --button-bg: #FFF;
+    --border-color: #124C5F;
+    --button-color: #124C5F;
+}
+
+.main {
+    height: 900px;
+}
+
+.main .header {
+    margin-left: 12%;
+    font-family: var(--header-font-fam);
+    font-size: 1.2rem;
+}
+
+.main .header::after {
+    display: block;
+    content: url(../../assets/images/underline.svg);
+    margin-top: -2%;
+}
+
+.main .discount {
+    margin-top: 3%;
+    margin-left: 12%;
+    font-family: var(--header-font-fam);
+    font-size: 2.5rem;
+}
+
+.main .discount span {
+    font-family: 'Alegreya', serif;
+    font-weight: bold; 
+}
+
+.main .products nav  {
+    display: flex;
+    width: 85%;
+    margin-top: 4%;
+    margin-left: 7%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ 
+.main .products nav .card {
+    width: 30%;
+    height: 560px;
+    font-family: var(--base-font-fam);
+    font-size: 1.3rem;
+
+    color: var(--base-color);
+    background-image:  url(../../assets/images/food1.svg), url(../../assets/images/pink-background.svg);
+    background-repeat: no-repeat;
+    background-position: 30% 0, 0 52%;
+}
+
+.main .products nav .card:nth-child(2) {
+    background-image: url(../../assets/images/food2.svg), url(../../assets/images/yellow-background.svg);
+}
+
+.main .products nav .card button {
+    width: 190px;
+    height: 55px;
+    font-size: 22px;
+    margin-left: 10%;
+    cursor: pointer;
+
+    color: var(--button-color);
+    background-color: var(--button-bg);
+    border: 2px solid var(--border-color);
+}
+
+.main .products nav .card a {
+    display: block;
+    margin-left: 10%;
+    padding-top: 400px;
+    font-size: 1.7rem;
+    text-decoration: none;
+
+    color: #000;
+}
+
+.main .products nav .card p {
+    margin-top: 0;
+    margin-left: 10%;
+}
+
