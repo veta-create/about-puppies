@@ -1,7 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header';
-import { RelationshipBlock } from './components/RelathionshipBlock/index';
-import { DogsDoSpeakBlock } from './components/DogsDoSpeakBlock/index';
+import {RelationshipBlock} from './components/RelathionshipBlock/index';
 
 function App() {
   return (
