@@ -2,7 +2,7 @@ import styles from './style.module.css'
 
 export function DogsDoSpeakBlock() {
   return(
-    <div className={styles.main}>
+    <section className={styles.main}>
       <div className={styles.learn}>
         <div><a href='#'>Learn more</a></div>
       </div>
@@ -13,6 +13,6 @@ export function DogsDoSpeakBlock() {
             Pudding biscuit caramels topb</p>
         <button><span>Explore more</span></button>
       </div>
-    </div>
+    </section>
   )
 }
