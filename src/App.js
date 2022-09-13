@@ -2,7 +2,8 @@ import './App.css'
 import Header from './components/Header/Header';
 import {RelationshipBlock} from './components/RelathionshipBlock/index';
 import {DogsDoSpeakBlock} from './components/DogsDoSpeakBlock/index'
-import { DogFoodBlock } from './components/DogFoodBlock';
+import { DogFoodBlock } from './components/DogFoodBlock/index';
+import { BlockAboutCustomers } from './components/BlockAboutCustomers/index';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <RelationshipBlock />
       <DogsDoSpeakBlock />
       <DogFoodBlock />
+      <BlockAboutCustomers />
       <div className='mainContent'>
 
       </div>
