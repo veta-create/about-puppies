@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import {RelationshipBlock} from './components/RelathionshipBlock/index';
 import {DogsDoSpeakBlock} from './components/DogsDoSpeakBlock/index'
 import { DogFoodBlock } from './components/DogFoodBlock/index';
-import { BlockAboutCustomers } from './components/BlockAboutCustomers/index';
+import {InsightBlock} from './components/InsightBlock/index'
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
       <RelationshipBlock />
       <DogsDoSpeakBlock />
       <DogFoodBlock />
-      <BlockAboutCustomers />
       <div className='mainContent'>
 
       </div>
