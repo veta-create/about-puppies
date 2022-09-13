@@ -4,6 +4,7 @@ import {RelationshipBlock} from './components/RelathionshipBlock/index';
 import {DogsDoSpeakBlock} from './components/DogsDoSpeakBlock/index'
 import { DogFoodBlock } from './components/DogFoodBlock/index';
 import {InsightBlock} from './components/InsightBlock/index'
+import { BlockAboutCustomers } from './components/BlockAboutCustomers';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <RelationshipBlock />
       <DogsDoSpeakBlock />
       <DogFoodBlock />
+      <InsightBlock />
+      <BlockAboutCustomers />
       <div className='mainContent'>
 
       </div>
