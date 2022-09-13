@@ -13,9 +13,9 @@ export function InsightBlock() {
           Sweet roll ice cream powder candy canes ice cream
           <br /> donut pudding biscuit ice cream.biscuit caramels topb
         </p>
-        <button>
+        <a href="#">
           <span>Explore more</span>
-        </button>
+        </a>
       </div>
     </section>
   );
