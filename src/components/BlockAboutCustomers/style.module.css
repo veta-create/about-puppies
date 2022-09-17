@@ -1,7 +1,5 @@
 .main {
   height: 800px;
-  margin-top: 20px;
-  background-color: aliceblue;
 }
 
 .main .header {
@@ -16,19 +14,118 @@
   margin-top: -2%;
 }
 
-.main ul {
+.main .cards {
   display: flex;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.main ul li {
+.main .cards li {
   list-style-type: none;
 }
 
-.main ul li .card {
-  height: 400px;
+.main .cards li .customerCard {
+  height: 480px;
   width: 360px;
+  font-family: "Rubik", sans-serif;
 }
 
+.main .cards li .customerCard .customerImage {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 304px;
 
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+}
+
+.main .cards li:nth-child(1) .customerCard .customerImage {
+  background-image: url(../../assets/images/rect-yellow-bg.svg);
+}
+
+.main .cards li:nth-child(2) .customerCard .customerImage {
+  background-image: url(../../assets/images/rect-pink-bg.svg);
+}
+
+.main .cards li:nth-child(3) .customerCard .customerImage {
+  background-image: url(../../assets/images/rect-blue-bg.svg);
+}
+
+.main .cards li .customerCard .rating {
+  padding-bottom: 35px;
+
+  background-color: #124c5f;
+}
+
+.main .cards li .customerCard .rating .names {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+
+  color: #ddca69;
+}
+
+.main .cards li .customerCard .rating p {
+  text-align: center;
+  font-size: 0.9rem;
+
+  color: #fff;
+}
+
+.main .cards li .customerCard .rating .bones {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .cards li .customerCard .rating .bones ul {
+  display: flex;
+  width: 60%;
+  padding: 0;
+  margin-left: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main .cards li .customerCard .rating .bones .value {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  margin-left: 10px;
+
+  color: #fff;
+}
+
+.main a {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 35px;
+  padding: 18px 36px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "Alegreya", serif;
+  text-decoration: none;
+
+  color: var(--white-color);
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+}
+
+.main a:hover {
+  transform: scale(1.1);
+  font-size: 1.3em;
+}
+
+.main a::after {
+  margin-left: 12px;
+  margin-top: 4px;
+  content: url(../../assets/images/arrow.svg);
+}

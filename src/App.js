@@ -15,9 +15,6 @@ function App() {
       <DogFoodBlock />
       <InsightBlock />
       <BlockAboutCustomers />
-      <div className='mainContent'>
-
-      </div>
     </div>
   );
 }
