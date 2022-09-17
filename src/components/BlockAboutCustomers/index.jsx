@@ -12,9 +12,9 @@ export function BlockAboutCustomers() {
         <h2>Happy Customer</h2>
       </div>
       <ul className={styles.cards}>
-        <li className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.img}>
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
               <img src={customer1} />
             </div>
             <div className={styles.rating}>
@@ -44,9 +44,9 @@ export function BlockAboutCustomers() {
           </div>
         </li>
 
-        <li className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.img}>
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
               <img src={customer2} />
             </div>
             <div className={styles.rating}>
@@ -76,9 +76,9 @@ export function BlockAboutCustomers() {
           </div>
         </li>
 
-        <li className={styles.card}>
-          <div className={styles.card}>
-            <div className={styles.img}>
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
               <img src={customer3} />
             </div>
             <div className={styles.rating}>

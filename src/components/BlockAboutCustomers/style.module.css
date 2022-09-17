@@ -27,40 +27,41 @@
   list-style-type: none;
 }
 
-.main .cards li .card {
+.main .cards li .customerCard {
   height: 480px;
   width: 360px;
   font-family: "Rubik", sans-serif;
 }
 
-.main .cards li .card .img {
+.main .cards li .customerCard .customerImage {
   margin: 0;
-  padding-left: 5%;
+  display: flex;
+  justify-content: center;
   height: 304px;
 
   background-repeat: no-repeat;
   background-position: 0 70px;
 }
 
-.main .cards li:nth-child(1) .card .img {
+.main .cards li:nth-child(1) .customerCard .customerImage {
   background-image: url(../../assets/images/rect-yellow-bg.svg);
 }
 
-.main .cards li:nth-child(2) .card .img {
+.main .cards li:nth-child(2) .customerCard .customerImage {
   background-image: url(../../assets/images/rect-pink-bg.svg);
 }
 
-.main .cards li:nth-child(3) .card .img {
+.main .cards li:nth-child(3) .customerCard .customerImage {
   background-image: url(../../assets/images/rect-blue-bg.svg);
 }
 
-.main .cards li .card .rating {
-  height: 145px;
+.main .cards li .customerCard .rating {
+  padding-bottom: 35px;
 
   background-color: #124c5f;
 }
 
-.main .cards li .card .rating .names {
+.main .cards li .customerCard .rating .names {
   padding-top: 10px;
   text-align: center;
   font-size: 1.7rem;
@@ -68,28 +69,28 @@
   color: #ddca69;
 }
 
-.main .cards li .card .rating p {
+.main .cards li .customerCard .rating p {
   text-align: center;
   font-size: 0.9rem;
 
   color: #fff;
 }
 
-.main .cards li .card .rating .bones {
+.main .cards li .customerCard .rating .bones {
   display: flex;
   flex-direction: row;
 }
 
-.main .cards li .card .rating .bones ul {
+.main .cards li .customerCard .rating .bones ul {
   display: flex;
-  width: 225px;
+  width: 60%;
   padding: 0;
   margin-left: auto;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.main .cards li .card .rating .bones .value {
+.main .cards li .customerCard .rating .bones .value {
   display: flex;
   flex-direction: row;
   margin-right: 10%;
