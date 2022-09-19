@@ -99,7 +99,7 @@
 }
 
 .main .grid .socials {
-  margin-left: 125px;
+  margin-left: 15%;
 }
 
 .main .grid .socials .links {
@@ -137,30 +137,30 @@
 }
 
 .main nav {
-    display: flex;
-    flex-direction: row;
-} 
+  display: flex;
+  flex-direction: row;
+}
 
-.main nav p {
-    margin-top: 30px;
-   margin-left: 125px;
+.main nav .copyright {
+  margin-top: 30px;
+  margin-left: 10%;
 }
 
 .main nav .links {
-    margin-top: 30px;
-    margin-left: 120px;
+  margin-top: 30px;
+  margin-left: 120px;
 }
 
-.main nav .links a{
-    margin-right: 60px;
-    font-size: 14px;
-    font-family: "Pangolin", cursive;
-    font-weight: 400;
-    text-decoration: none;
+.main nav .links a {
+  margin-right: 60px;
+  font-size: 14px;
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  text-decoration: none;
 
-    color: #000;
+  color: #000;
 }
 
 .main nav .links a:hover {
-    color: #124c5f;
+  color: #124c5f;
 }

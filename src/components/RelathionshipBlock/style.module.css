@@ -14,8 +14,16 @@
 
 .main {
   background-image: url(../../assets/images/dog1.png), url(../../assets/images/background.png);
+  background-size: auto, 100%;
   background-position: top right;
   background-repeat: var(--bg-repeat);
+}
+
+@media (min-width: 360px) and (max-width: 1000px) {
+    .main {
+        background-image: none;
+        background-color: #FFFFE5;
+    }
 }
 
 .relationship {
@@ -79,6 +87,13 @@
     justify-content: flex-start; 
     flex-direction: column;
 
+}
+
+@media (min-width: 360px) and (max-width: 1000px) {
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .services .navContainer nav{

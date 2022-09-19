@@ -1,42 +1,64 @@
 :root {
-    --header-font-family: 'Alegreya', serif;
-    --header-text-transform: uppercase;
-    --header-font-weight: bold;
-    --header-navigation-hover: #FFAA00;
-    --button-sign-background: #124C5F;
-    --button-register-background: #C7E7E1;
-    --button-register-color: #124C5F;
+  --header-font-family: "Alegreya", serif;
+  --header-text-transform: uppercase;
+  --header-font-weight: bold;
+  --header-navigation-hover: #ffaa00;
+  --button-sign-background: #124c5f;
+  --button-register-background: #c7e7e1;
+  --button-register-color: #124c5f;
 }
 
 .header {
-    height: 104px;
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
+  height: 104px;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
 }
 
-.header .logo div {
-    margin-left: 30%;
-    margin-top: 10%;
+@media (min-width: 315px) and (max-width: 1080px) {
+  .header {
+    height: 150px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50% 40%;
+  }
+
+  .header .navigation nav {
+    flex-wrap: wrap;
+  }
+
+  .header .navigation nav a {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1085px) and (max-width: 2560px) {
+  .header .logo {
+    padding-left: 20%;
+    padding-top: 10%;
+  }
 }
 
 .header .navigation {
-    margin-top: 6%;
+  margin-top: 6%;
+}
+
+.header .navigation nav {
+  display: flex;
+  margin: auto;
 }
 
 .header .navigation a {
-    width: 92px;
-    height: 10px;
-    margin-right: 8%;
+  width: 92px;
+  height: 10px;
+  margin-right: 8%;
 
+  white-space: nowrap;
+  font-family: var(--header-font-family);
+  text-transform: var(--header-text-transform);
+  font-weight: var(--header-font-weight);
+  font-size: 100%;
+  text-decoration: none;
 
-    white-space: nowrap;
-    font-family: var(--header-font-family);
-    text-transform: var(--header-text-transform);
-    font-weight: var(--header-font-weight);
-    font-size: 100%;
-    text-decoration: none;
-
-    color: black;
+  color: black;
 }
 
 .header .navigation a:hover {
@@ -44,50 +66,53 @@
 }
 
 .header .navigation a:last-child {
-    margin-right: 3%;
+  margin-right: 3%;
 }
 
 .header .auth {
-    display: flex;
-    height: 104px;
-    flex-direction: row;
+  display: flex;
+  height: 104px;
+  flex-direction: row;
 }
 
 .header .auth .sign {
-    width: 35%;
-    height: 50px;
-    margin-top: 5%;
-    cursor: pointer;
+  min-width: 70px;
+  width: 35%;
+  max-width: 150px;
+  height: 50px;
+  margin-top: 5%;
+  cursor: pointer;
 
-    font-family: var(--header-font-family);
-    text-transform: var(--header-text-transform);
-    font-weight: var(--header-font-weight);
+  font-family: var(--header-font-family);
+  text-transform: var(--header-text-transform);
+  font-weight: var(--header-font-weight);
 
-    color: #FFFFFF;
-    background: var(--button-sign-background);
-    border: none;
-    border-radius: 5px;
+  color: #ffffff;
+  background: var(--button-sign-background);
+  border: none;
+  border-radius: 5px;
 }
 
-
-.header .auth .sign:hover, .header .auth .register:hover {
-    text-decoration: underline;
+.header .auth .sign:hover,
+.header .auth .register:hover {
+  text-decoration: underline;
 }
-
 
 .header .auth .register {
-    width: 35%;
-    height: 50px;
-    margin-top: 5%;
-    margin-left: 5%;
-    cursor: pointer;
+  min-width: 70px;
+  width: 35%;
+  max-width: 150px;
+  height: 50px;
+  margin-top: 5%;
+  margin-left: 5%;
+  cursor: pointer;
 
-    font-family: var(--header-font-family);
-    text-transform: var(--header-text-transform);
-    font-weight: var(--header-font-weight);
+  font-family: var(--header-font-family);
+  text-transform: var(--header-text-transform);
+  font-weight: var(--header-font-weight);
 
-    color: var(--button-register-color);
-    background: var(--button-register-background);
-    border: none;
-    border-radius: 5px;
+  color: var(--button-register-color);
+  background: var(--button-register-background);
+  border: none;
+  border-radius: 5px;
 }
