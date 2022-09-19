@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @media (min-width: 330px) and (max-width: 500px) {
   .App {
     width: 100%;
