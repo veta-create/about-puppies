@@ -15,26 +15,27 @@
   margin-top: 85px;
   width: 45%;
   font-size: 1.7rem;
+  text-align: center;
   line-height: 42px;
   font-family: "Pangolin", cursive;
 }
 
 .main form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  justify-items: center;
+  white-space: nowrap;
   flex-direction: row;
   width: 53%;
-  height: 120px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-top: 70px;
   overflow: auto;
 
   background-color: #fff;
-}
-
-.main form div {
-  margin-top: 45px;
-  margin-left: 50px;
 }
 
 .main form div::before {
@@ -60,9 +61,7 @@
 
 .main form button {
   display: flex;
-  align-items: center;
-  margin-top: 32px;
-  margin-left: 20%;
+  justify-content: center;
   height: 65px;
   padding: 18px 36px;
   cursor: pointer;
@@ -88,6 +87,7 @@
 
 .main .grid {
   display: grid;
+  justify-items: center;
   height: 155px;
   margin-top: 100px;
   grid-template-columns: 47% 53%;
@@ -137,22 +137,20 @@
 }
 
 .main nav {
-  display: flex;
-  flex-direction: row;
-}
-
-.main nav .copyright {
-  margin-top: 30px;
-  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-items: center;
 }
 
 .main nav .links {
-  margin-top: 30px;
-  margin-left: 120px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: end;
+  align-items: center;
 }
 
 .main nav .links a {
-  margin-right: 60px;
+  text-align: center;
   font-size: 14px;
   font-family: "Pangolin", cursive;
   font-weight: 400;
