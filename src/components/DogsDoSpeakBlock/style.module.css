@@ -19,6 +19,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .main {
+    height: auto;
+  }
 }
 
 @media (min-width: 1020px) and (max-width: 1200px) {
@@ -29,6 +33,10 @@
 
   .description {
     padding-top: 7%;
+  }
+
+  .main {
+    height: 700px;
   }
 }
 
@@ -41,12 +49,15 @@
   .description {
     padding-top: 7%;
   }
+
+  .main {
+    height: 700px;
+  }
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  height: 700px;
   margin-top: 40px;
 }
 
