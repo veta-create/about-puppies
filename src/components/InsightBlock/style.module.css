@@ -2,14 +2,43 @@
   --white-color: #fff;
 }
 
-@media (min-width: 315px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 1020px) {
+  .main {
+    margin-top: 50px;
+    height: auto;
+    background-image: none;
+  }
+
+  .description h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main {
+    height: 300px;
+    background-image: url(../../assets/images/man-with-dog.png);
+  }
+
+  .description h2 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1220px) and (max-width: 2560px) {
+  .main {
+    height: 680px;
+    background-image: url(../../assets/images/man-with-dog.png);
+  }
+
+  .description h2 {
+    font-size: 3em;
+  }
 }
 
 .main {
   height: 680px;
-
   background-color: #b1e2f347;
-  background-image: url(../../assets/images/man-with-dog.png);
   background-repeat: no-repeat;
   background-position: 85% 0;
 }
@@ -25,7 +54,6 @@
 .description h2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3em;
   font-family: var(--header-font-fam);
 }
 
