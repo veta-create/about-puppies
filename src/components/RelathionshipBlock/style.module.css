@@ -29,11 +29,15 @@
   }
 
   .main .services .navContainer nav div {
-    width: 80%;
+    width: 70%;
   }
 
   .main .services .navContainer {
     margin-left: 10%;
+  }
+
+  .services .navContainer nav div {
+    height: 150px;
   }
 }
 
@@ -47,6 +51,10 @@
     margin-right: auto;
     margin-top: 10%;
   }
+
+  .services .navContainer nav div {
+    height: 225px;
+  }
 }
 
 @media (min-width: 1220px) and (max-width: 2560px) {
@@ -56,6 +64,14 @@
 
   .services .navContainer nav div {
     margin: 0 2%;
+  }
+
+  .services .navContainer nav .grooming {
+    margin-left: 8%;
+  }
+
+  .services .navContainer nav div {
+    height: 225px;
   }
 }
 
@@ -128,7 +144,6 @@
 
 .services .navContainer nav div {
   width: 13%;
-  height: 225px;
   cursor: pointer;
 
   background-color: #fff;
@@ -172,7 +187,6 @@
 }
 
 .services .navContainer nav .grooming {
-  margin-left: 8%;
   background-image: url(../../assets/images/grooming.svg);
   background-repeat: var(--bg-repeat);
   background-position: var(--bg-position);

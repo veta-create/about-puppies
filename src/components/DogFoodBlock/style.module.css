@@ -3,6 +3,21 @@
   --header-font-fam: "Pangolin", cursive;
 }
 
+@media (min-width: 315px) and (max-width: 450px) {
+  .main  {
+     margin-top: 35%;
+  }
+}
+
+@media (min-width: 455px) and (max-width: 1020px){
+  .main {
+    margin-top: -30%;
+  }
+}
+
+
+
+
 .main {
   height: 890px;
 }
