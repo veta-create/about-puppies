@@ -1,5 +1,48 @@
-.main {
-  height: 800px;
+@media (min-width: 320px) and (max-width: 1020px) {
+  .main {
+    height: auto;
+  }
+
+  .main .cards {
+    width: 100%;
+    max-width: 360px;
+    padding-left: 0;
+    flex-direction: column;
+  }
+
+  .main .cards li .customerCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main {
+    height: 800px;
+  }
+
+  .main .cards {
+    width: 85%;
+    flex-direction: row;
+  }
+
+  .main .cards li .customerCard {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1220px) and (max-width: 2560px) {
+  .main {
+    height: 800px;
+  }
+
+  .main .cards {
+    width: 85%;
+    flex-direction: row;
+  }
+
+  .main .cards li .customerCard {
+    width: 360px;
+  }
 }
 
 .main .header {
@@ -16,10 +59,8 @@
 
 .main .cards {
   display: flex;
-  width: 85%;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -29,7 +70,6 @@
 
 .main .cards li .customerCard {
   height: 480px;
-  width: 360px;
   font-family: "Rubik", sans-serif;
 }
 
