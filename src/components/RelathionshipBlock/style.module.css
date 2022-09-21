@@ -30,6 +30,7 @@
 
   .main .services .navContainer nav div {
     width: 70%;
+    max-width: 300px;
   }
 
   .main .services .navContainer {
