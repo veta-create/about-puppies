@@ -14,8 +14,21 @@
   grid-template-columns: 20% 50% 30%;
 }
 
+@media (min-width: 315px) and (max-width: 480px) {
+  .header .navigation {
+    display: none;
+  }
+}
+
+@media (min-width: 485px) and (max-width: 1080px) {
+  .header .navigationBurger {
+    display: none;
+  }
+}
+
 @media (min-width: 315px) and (max-width: 1080px) {
   .header {
+    z-index: 1;
     height: 150px;
     grid-template-columns: 100%;
     grid-template-rows: 10% 50% 40%;
@@ -28,12 +41,17 @@
   .header .navigation nav a {
     margin-top: 5px;
   }
+
 }
 
 @media (min-width: 1085px) and (max-width: 2560px) {
   .header .logo {
     padding-left: 20%;
     padding-top: 10%;
+  }
+
+  .header .navigationBurger {
+    display: none;
   }
 }
 
@@ -67,6 +85,31 @@
 
 .header .navigation a:last-child {
   margin-right: 3%;
+}
+
+.header .navigationBurger {
+  z-index: 2;
+  margin-left: 40%;
+}
+
+.header .navigationBurger img {
+  margin-left: 80%;
+}
+
+.header .navigationBurger nav ul li {
+  border: 1px solid rgb(97, 96, 96);
+  list-style-type: none;
+
+  background-color: #fff;
+}
+
+.header .navigationBurger nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header .navigationBurger nav ul li a:hover {
+  color: var(--header-navigation-hover);
 }
 
 .header .auth {
