@@ -69,7 +69,7 @@
 
   .main form button {
     height: 65px;
-    padding: 18px 36px;
+    padding: 22px 36px;
   }
 
   .main .grid {
@@ -110,7 +110,7 @@
 
   .main form button {
     height: 65px;
-    padding: 18px 36px;
+    padding: 22px 36px;
   }
 
   .main .grid {
@@ -194,7 +194,7 @@
 
 .main .grid {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   font-size: 0.9rem;
   font-family: var(--base-font-family);
   font-weight: 700;
@@ -203,7 +203,7 @@
 }
 
 .main .grid .socials {
-  margin-left: 15%;
+  padding-left: 20%;
 }
 
 .main .grid .socials .links {
