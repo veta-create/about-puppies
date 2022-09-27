@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 1220px) and (max-width: 2560px) {
+@media (min-width: 1220px) and (max-width: 12450px) {
   .services .navContainer nav div a {
     margin-top: 85%;
   }
