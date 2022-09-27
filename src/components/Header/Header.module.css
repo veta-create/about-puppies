@@ -41,17 +41,16 @@
   .header .navigation nav a {
     margin-top: 5px;
   }
-
 }
 
-@media (min-width: 1085px) and (max-width: 2560px) {
+@media (min-width: 1085px) and (max-width: 12450px) {
+  .header .navigationBurger {
+    display: none;
+  }
+
   .header .logo {
     padding-left: 20%;
     padding-top: 10%;
-  }
-
-  .header .navigationBurger {
-    display: none;
   }
 }
 
