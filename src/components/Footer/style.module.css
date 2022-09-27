@@ -8,6 +8,19 @@
     height: auto;
   }
 
+  .main .grid .socials {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main .grid .socials p {
+    text-align: center;
+  }
+
+  .main .grid .socials .links a {
+    margin-right: 0;
+  }
+
   .main form div input {
     font-size: 1rem;
     padding: 0;
@@ -25,7 +38,7 @@
 
   .main form button {
     height: 30px;
-    padding: 10px;
+    padding: 5px;
   }
 
   .main .grid {
@@ -45,6 +58,14 @@
 @media (min-width: 1020px) and (max-width: 1200px) {
   .main {
     height: 655px;
+  }
+
+  .main .grid .socials {
+    padding-left: 20%;
+  }
+
+  .main .grid .socials .links a {
+    margin-right: 25px;
   }
 
   .main .header {
@@ -86,6 +107,14 @@
 @media (min-width: 1220px) and (max-width: 2560px) {
   .main {
     height: 655px;
+  }
+
+  .main .grid .socials {
+    padding-left: 20%;
+  }
+
+  .main .grid .socials .links a {
+    margin-right: 25px;
   }
 
   .main .header {
@@ -202,16 +231,8 @@
   border-bottom: 1px solid #c7c7c7;
 }
 
-.main .grid .socials {
-  padding-left: 20%;
-}
-
 .main .grid .socials .links {
   margin-top: 15px;
-}
-
-.main .grid .socials .links a {
-  margin-right: 25px;
 }
 
 .main .grid .contacts {

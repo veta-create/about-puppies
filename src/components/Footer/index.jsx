@@ -18,7 +18,7 @@ export function Footer() {
 
       <div className={styles.grid}>
         <div className={styles.socials}>
-          Follow on social
+          <p>Follow on social</p>
           <div className={styles.links}>
             <a href="#" className={styles.facebook}>
               <img src={facebookIcon} />
