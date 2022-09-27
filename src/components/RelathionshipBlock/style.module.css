@@ -24,25 +24,39 @@
     background-image: url(../../assets/images/background.png);
   }
 
-  .main .services .navContainer nav {
-    flex-direction: column;
-  }
-
-  .main .services .navContainer nav div {
-    width: 70%;
-    max-width: 300px;
+  .services {
+    padding-left: 0;
   }
 
   .main .services .navContainer {
-    margin-left: 10%;
+    width: 100%;
   }
 
-  .services .navContainer nav div {
+  .main .services .navContainer nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main .services .navContainer nav div {
     height: 150px;
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main .services .navContainer nav {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 }
 
 @media (min-width: 1020px) and (max-width: 1200px) {
+  .services {
+    padding-left: 5%;
+  }
+
   .main {
     background-image: url(../../assets/images/background.png);
   }
@@ -59,6 +73,10 @@
 }
 
 @media (min-width: 1220px) and (max-width: 12450px) {
+  .services {
+    padding-left: 5%;
+  }
+
   .services .navContainer nav div a {
     margin-top: 85%;
   }
@@ -132,7 +150,6 @@
 
 .services {
   padding-top: 18%;
-  padding-left: 5%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
