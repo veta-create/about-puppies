@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
-import burger from "../../assets/images/hamburger.png";
+import burger from "../../assets/images/burger.svg";
 
 function Header() {
   return (
