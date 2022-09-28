@@ -187,6 +187,12 @@
   }
 }
 
+@media (min-width: 1500px) and (max-width: 12450px) {
+  .main .grid .contacts {
+    margin-left: 15%;
+  }
+}
+
 .main {
   overflow: auto;
   background-color: #f6faf9;
