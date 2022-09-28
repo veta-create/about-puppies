@@ -12,6 +12,74 @@
   height: 104px;
   display: grid;
   grid-template-columns: 20% 50% 30%;
+  margin-left: 10%;
+}
+
+.header .hamburgerMenu {
+  width: 40px;
+  margin-left: 85%;
+  margin-top: 20%;
+  display: block;
+  transform: translate(-50%, -50%);
+  transition: .6s;
+  cursor: pointer;
+}
+
+.header .hamburgerMenu div {
+  width: 40px;
+  padding: 0 15px;
+  background: rgb(24, 0, 0);
+  height: 5px;
+  margin: 10px 0;
+  border-radius: 30px;
+  transition: .6s;
+}
+
+.change div:nth-child(1) {
+  transform: translateY(57px) rotate(47deg);
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #2626ff, #0d9eff, #ff0d6e, #cf0d6e);
+  animation: mymove 10s linear infinite;
+}
+
+.change div:nth-child(3) {
+  transform: translateY(-30px) rotate(-48deg);
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #2626ff, #0d9eff, #ff0d6e, #cf0d6e);
+  animation: myMove 10s linear infinite;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes myMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.change div:nth-child(2) {
+  opacity: 0;
+  background: lightblue;
 }
 
 @media (min-width: 315px) and (max-width: 480px) {

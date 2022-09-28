@@ -1,12 +1,15 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
-import burger from "../../assets/images/burger.svg";
 
 function Header() {
   return (
     <section className={styles.header}>
       <div className={styles.navigationBurger}>
-        <img src={burger} alt="hamburger" />
+        <div className={styles.hamburgerMenu} onclick="myFunction(this)">
+          <div className={styles.hamburgerBar}></div>
+          <div className={styles.hamburgerBar}></div>
+          <div className={styles.hamburgerBar}></div>
+        </div>
         <nav>
           <ul>
             <li>
