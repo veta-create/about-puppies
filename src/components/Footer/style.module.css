@@ -8,6 +8,15 @@
     height: auto;
   }
 
+  .main .grid .contacts {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main .grid .contacts div {
+    width: 100%;
+  }
+
   .main form div input {
     border: 1px solid rgb(154, 152, 152);
   }
@@ -56,6 +65,14 @@
 @media (min-width: 1020px) and (max-width: 1200px) {
   .main {
     height: 655px;
+  }
+
+  .main .grid .contacts {
+    flex-direction: row;
+  }
+
+  .main .grid .contacts div {
+    width: 30%;
   }
 
   .main .grid .socials {
@@ -107,6 +124,14 @@
 @media (min-width: 1220px) and (max-width: 2560px) {
   .main {
     height: 655px;
+  }
+
+  .main .grid .contacts {
+    flex-direction: row;
+  }
+
+  .main .grid .contacts div {
+    width: 30%;
   }
 
   .main .grid .socials {
@@ -238,11 +263,6 @@
 
 .main .grid .contacts {
   display: flex;
-  flex-direction: row;
-}
-
-.main .grid .contacts div {
-  width: 30%;
 }
 
 .main .grid .contacts .number {
