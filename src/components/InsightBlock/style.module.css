@@ -10,7 +10,7 @@
   }
 
   .description h2 {
-    font-size: 2em;
+    font-size: 1.6rem;
   }
 }
 
@@ -37,7 +37,6 @@
 }
 
 .main {
-  height: 680px;
   background-color: #b1e2f347;
   background-repeat: no-repeat;
   background-position: 85% 0;
