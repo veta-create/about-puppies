@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import { Button } from "../reusableTemplates/button/index";
 
 export function RelationshipBlock() {
   return (
@@ -13,9 +14,9 @@ export function RelationshipBlock() {
             Human-canine bonding is the relationship
             <br /> between dogs and humans
           </p>
-          <button>
-            <span>Explore more</span>
-          </button>
+          <div className={styles.link}>
+            <Button tag="a" text="Explore more" />
+          </div>
         </div>
       </div>
 

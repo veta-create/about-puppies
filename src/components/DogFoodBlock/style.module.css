@@ -38,7 +38,7 @@
     height: 570px;
   }
 
-  .main .discount div {
+  .main .discount .offer {
     margin-top: 3%;
   }
 
@@ -61,7 +61,7 @@
     align-items: stretch;
   }
 
-  .main .discount div {
+  .main .discount .offer {
     margin-top: 3%;
   }
 
@@ -95,12 +95,12 @@
   flex-direction: row;
 }
 
-.main .discount div {
+.main .discount .offer {
   margin-top: 3%;
   margin-left: 12%;
 }
 
-.main .discount div a {
+.main .discount .offer a {
   font-family: var(--header-font-fam);
   font-size: 2.5rem;
   text-decoration: none;
@@ -108,37 +108,14 @@
   color: #000;
 }
 
-.main .discount div span {
+.main .discount .offer span {
   font-family: "Alegreya", serif;
   font-weight: bold;
 }
 
 .main .discount .view {
-  align-items: center;
-  width: 200px;
-  height: 60px;
-  justify-content: center;
-  margin-top: 3%;
-  margin-left: 35%;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: "Alegreya", serif;
-
-  color: #fff;
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.main .discount .view::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
-}
-
-.main .discount .view:hover {
-  transform: scale(1.1);
-  font-size: 1.3em;
+  margin-top: 30px;
+  margin-left: 30%;
 }
 
 .main .products ul {

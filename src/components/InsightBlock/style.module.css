@@ -64,30 +64,6 @@
   color: var(--base-color);
 }
 
-.description a {
-  display: flex;
-  align-items: center;
-  margin-top: 48px;
-  height: 35px;
-  padding: 35px 40px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: "Alegreya", serif;
-  text-decoration: none;
-
-  color: var(--white-color);
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.description a:hover {
-  transform: scale(1.1);
-  font-size: 1.3em;
-}
-
-.description a::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
+.main .description .link {
+  margin-top: 5%;
 }

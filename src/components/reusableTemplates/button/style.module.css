@@ -22,3 +22,35 @@
   content: url(../../../assets/images/arrow.svg);
 }
 
+.main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 35px;
+  padding: 30px 100px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "Alegreya", serif;
+  text-decoration: none;
+  white-space: nowrap;
+
+  color: var(--white-color);
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 5px;
+}
+
+.main a:hover {
+  transform: scale(1.1);
+  font-size: 1.3em;
+}
+
+.main a::after {
+  margin-left: 12px;
+  margin-top: 4px;
+  content: url(../../../assets/images/arrow.svg);
+}

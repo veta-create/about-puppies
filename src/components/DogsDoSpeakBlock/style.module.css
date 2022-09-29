@@ -10,12 +10,10 @@
 @media (min-width: 315px) and (max-width: 1000px) {
   .learn {
     display: none;
-  }
-  .learn {
     background-image: none;
   }
 
-  .description button {
+  .description .link {
     margin-left: auto;
     margin-right: auto;
   }
@@ -67,6 +65,10 @@
   background-position: right top;
 }
 
+.description .link {
+  margin-right: 70%;
+}
+
 .description h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -80,33 +82,6 @@
   font-size: 1.5rem;
   font-family: var(--base-font-fam);
   color: var(--base-color);
-}
-
-.description button {
-  display: flex;
-  align-items: center;
-  margin-top: 48px;
-  height: 80px;
-  padding: 18px 36px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: var(--button-font-fam);
-
-  color: #fff;
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.description button:hover {
-  transform: scale(1.1);
-  font-size: 1.3em;
-}
-
-.description button::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
 }
 
 .learn {

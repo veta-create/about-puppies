@@ -4,6 +4,7 @@ import customer2 from "../../assets/images/customer2.png";
 import customer3 from "../../assets/images/customer3.png";
 import fullBone from "../../assets/images/full-bone.svg";
 import bone from "../../assets/images/bone.svg";
+import { Button } from "../reusableTemplates/button";
 
 export function BlockAboutCustomers() {
   return (
@@ -96,7 +97,7 @@ export function BlockAboutCustomers() {
           </div>
         </li>
       </ul>
-      <a href="#">Explore more</a>
+      <Button tag="a" text="Explore more" />
     </section>
   );
 }
