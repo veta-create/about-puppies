@@ -3,6 +3,10 @@
     height: auto;
   }
 
+  .main a {
+    margin-bottom: 20px;
+  }
+
   .main .cards {
     width: 100%;
     max-width: 360px;
