@@ -6,6 +6,7 @@
 @media (min-width: 315px) and (max-width: 1000px) {
   .main {
     height: auto;
+    width: 100%;
   }
 
   .main nav {
