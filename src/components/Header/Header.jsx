@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
 
-function Header() {
+function Header(props) {
   return (
     <section className={styles.header}>
       <div className={styles.navigationBurger}>
