@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import facebookIcon from "../../assets/images/facebook.svg";
 import instIcon from "../../assets/images/inst.svg";
+import { Button } from '../reusableTemplates/button/index'
 
 export function Footer() {
   return (
@@ -10,10 +11,10 @@ export function Footer() {
       </div>
 
       <form>
-        <div>
+        <div className={styles.field}>
           <input type="email" placeholder="Type your email adress here" />
         </div>
-        <button>Submit now</button>
+        <Button text="Submit" tag="button" />
       </form>
 
       <div className={styles.grid}>

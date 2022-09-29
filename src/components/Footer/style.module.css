@@ -28,12 +28,12 @@
     width: 100%;
   }
 
-  .main form div {
+  .main form .field {
     width: 65%;
     max-width: 400px;
   }
 
-  .main form div input {
+  .main form .field input {
     border: 1px solid rgb(154, 152, 152);
   }
 
@@ -127,13 +127,13 @@
     margin-top: 70px;
   }
 
-  .main form div::before {
+  .main form .field::before {
     position: absolute;
     margin-top: 5px;
     content: url(../../assets/images/letter.svg);
   }
 
-  .main form div input {
+  .main form .field input {
     font-size: 1.5rem;
     margin-left: 50px;
 
@@ -193,13 +193,13 @@
     margin-top: 70px;
   }
 
-  .main form div::before {
+  .main form .field::before {
     position: absolute;
     margin-top: 5px;
     content: url(../../assets/images/letter.svg);
   }
 
-  .main form div input {
+  .main form .field input {
     font-size: 1.5rem;
     margin-left: 50px;
 
@@ -257,7 +257,7 @@
   background-color: #fff;
 }
 
-.main form div input {
+.main form .field input {
   width: 100%;
   font-family: var(--second-base-font-family);
   line-height: 26px;
@@ -265,32 +265,8 @@
   color: #414141;
 }
 
-.main form div input:focus {
+.main form .field input:focus {
   border: none;
-}
-
-.main form button {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: var(--base-font-family);
-  text-decoration: none;
-
-  color: var(--white-color);
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.main form button:hover {
-  transform: scale(1.06);
-}
-
-.main form button::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
 }
 
 .main .grid {
