@@ -9,6 +9,10 @@
     width: 100%;
   }
 
+  .main .header h2 {
+    font-size: 1rem;
+  }
+
   .main nav {
     grid-template-rows: 30% 70%;
     grid-row-gap: 5px;
@@ -56,11 +60,13 @@
 
   .main .header {
     font-size: 1rem;
+    margin-top: 30px;
   }
 
   .main form {
     grid-template-rows: 50% 50%;
     width: 100%;
+    margin-top: 15px;
   }
 
   .main form button {
@@ -112,11 +118,13 @@
 
   .main .header {
     font-size: 1.7rem;
+    margin-top: 85px;
   }
 
   .main form {
     grid-template-columns: 70% 30%;
     width: 53%;
+    margin-top: 70px;
   }
 
   .main form div::before {
@@ -176,11 +184,13 @@
 
   .main .header {
     font-size: 1.7rem;
+    margin-top: 85px;
   }
 
   .main form {
     grid-template-columns: 70% 30%;
     width: 53%;
+    margin-top: 70px;
   }
 
   .main form div::before {
@@ -226,7 +236,6 @@
 .main .header {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 85px;
   width: 45%;
   text-align: center;
   line-height: 42px;
@@ -243,7 +252,6 @@
   margin-right: auto;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-top: 70px;
   overflow: auto;
 
   background-color: #fff;
