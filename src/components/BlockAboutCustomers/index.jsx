@@ -22,21 +22,17 @@ export function BlockAboutCustomers() {
               <p>Amazing Products & Delivery on time.</p>
               <div className={styles.bones}>
                 <ul>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={bone} />
-                  </li>
+                  {[true, true, true, true, false].map((e) => {
+                    return e === true ? (
+                      <li className={styles.bone}>
+                        <img src={fullBone} />
+                      </li>
+                    ) : (
+                      <li className={styles.bone}>
+                        <img src={bone} />
+                      </li>
+                    );
+                  })}
                 </ul>
                 <div className={styles.value}>4.2/5</div>
               </div>
@@ -54,21 +50,17 @@ export function BlockAboutCustomers() {
               <p>Love the overall Shopping experience!</p>
               <div className={styles.bones}>
                 <ul>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
+                  {[true, true, true, true, false].map((e) => {
+                    return e === true ? (
+                      <li className={styles.bone}>
+                        <img src={fullBone} />
+                      </li>
+                    ) : (
+                      <li className={styles.bone}>
+                        <img src={bone} />
+                      </li>
+                    );
+                  })}
                 </ul>
                 <div className={styles.value}>4.2/5</div>
               </div>
@@ -86,21 +78,17 @@ export function BlockAboutCustomers() {
               <p>Kitch is love food from the pup-hub</p>
               <div className={styles.bones}>
                 <ul>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
-                  <li className={styles.bone}>
-                    <img src={fullBone} />
-                  </li>
+                  {[true, true, true, true, false].map((e) => {
+                    return e === true ? (
+                      <li className={styles.bone}>
+                        <img src={fullBone} />
+                      </li>
+                    ) : (
+                      <li className={styles.bone}>
+                        <img src={bone} />
+                      </li>
+                    );
+                  })}
                 </ul>
                 <div className={styles.value}>4.2/5</div>
               </div>

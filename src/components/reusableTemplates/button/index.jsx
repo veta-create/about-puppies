@@ -4,7 +4,6 @@ export function Button(props) {
   return <div className={styles.main}>{props.tag == "a" ?
   <a>
     {props.text}
-    {props.text}
   </a> :
   <button>
     {props.text}
