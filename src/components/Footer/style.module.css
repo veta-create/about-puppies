@@ -39,6 +39,14 @@
     margin-right: 0;
   }
 
+  .main .grid .socials .links a:nth-child(1) {
+    margin-right: 5px;
+  }
+
+  .main .grid .socials .links a:nth-child(2) {
+    margin-left: 5px;
+  }
+
   .main .header {
     font-size: 1rem;
   }
