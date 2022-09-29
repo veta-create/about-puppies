@@ -67,7 +67,7 @@ export function BlockAboutCustomers() {
                     <img src={fullBone} />
                   </li>
                   <li className={styles.bone}>
-                    <img src={fullBone} />
+                    <img src={bone} />
                   </li>
                 </ul>
                 <div className={styles.value}>4.2/5</div>
@@ -99,7 +99,7 @@ export function BlockAboutCustomers() {
                     <img src={fullBone} />
                   </li>
                   <li className={styles.bone}>
-                    <img src={fullBone} />
+                    <img src={bone} />
                   </li>
                 </ul>
                 <div className={styles.value}>4.2/5</div>
