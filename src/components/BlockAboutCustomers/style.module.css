@@ -13,10 +13,6 @@
     padding-left: 0;
     flex-direction: column;
   }
-
-  .main .cards li .customerCard {
-    width: 100%;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -28,10 +24,6 @@
     width: 85%;
     flex-direction: row;
   }
-
-  .main .cards li .customerCard {
-    width: 360px;
-  }
 }
 
 @media (min-width: 1220px) and (max-width: 2560px) {
@@ -42,10 +34,6 @@
   .main .cards {
     width: 85%;
     flex-direction: row;
-  }
-
-  .main .cards li .customerCard {
-    width: 360px;
   }
 }
 
@@ -68,77 +56,17 @@
   justify-content: space-around;
 }
 
-.main .cards li {
-  list-style-type: none;
-}
-
-.main .cards li .customerCard {
-  height: 480px;
-  font-family: "Rubik", sans-serif;
-}
-
-.main .cards li .customerCard .customerImage {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  height: 304px;
-
-  background-repeat: no-repeat;
-  background-position: 0 70px;
-}
-
-.main .cards li:nth-child(1) .customerCard .customerImage {
+.main .cards li .yellowBackground {
   background-image: url(../../assets/images/rect-yellow-bg.svg);
+  background-size: 100%;
 }
 
-.main .cards li:nth-child(2) .customerCard .customerImage {
+.main .cards li .pinkBackground{
   background-image: url(../../assets/images/rect-pink-bg.svg);
+  background-size: 100%
 }
 
-.main .cards li:nth-child(3) .customerCard .customerImage {
+.main .cards li .violetBackground {
   background-image: url(../../assets/images/rect-blue-bg.svg);
-}
-
-.main .cards li .customerCard .rating {
-  padding-bottom: 35px;
-
-  background-color: #124c5f;
-}
-
-.main .cards li .customerCard .rating .names {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 1.7rem;
-
-  color: #ddca69;
-}
-
-.main .cards li .customerCard .rating p {
-  text-align: center;
-  font-size: 0.9rem;
-
-  color: #fff;
-}
-
-.main .cards li .customerCard .rating .bones {
-  display: flex;
-  flex-direction: row;
-}
-
-.main .cards li .customerCard .rating .bones ul {
-  display: flex;
-  width: 60%;
-  padding: 0;
-  margin-left: auto;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.main .cards li .customerCard .rating .bones .value {
-  display: flex;
-  flex-direction: row;
-  margin-right: 10%;
-  margin-left: 10px;
-
-  color: #fff;
+  background-size: 100%
 }

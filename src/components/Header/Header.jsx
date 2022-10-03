@@ -1,31 +1,39 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
 
 function Header(props) {
+  const [burgerState, switchBurgerState] = useState(false);
+
   return (
     <section className={styles.header}>
       <div className={styles.navigationBurger}>
-        <div className={styles.hamburgerMenu} onclick="myFunction(this)">
+        <div
+          className={styles.hamburgerMenu}
+          onClick={() => {
+            switchBurgerState(burgerState ? false : true);
+          }}
+        >
           <div className={styles.hamburgerBar}></div>
           <div className={styles.hamburgerBar}></div>
           <div className={styles.hamburgerBar}></div>
         </div>
-        <nav>
+        <nav className={burgerState ? styles.burgerActive : styles.burgerHide}>
           <ul>
             <li>
-              <a href="#">Our services</a>
+              <a href="#services">Our services</a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="#aboutUs">About us</a>
             </li>
             <li>
-              <a href="#">Products</a>
+              <a href="#products">Products</a>
             </li>
             <li>
-              <a href="#">Pet care</a>
+              <a href="#customers">Pet care</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -34,6 +42,7 @@ function Header(props) {
         <img alt="logo" src={logo}></img>
       </div>
       <div className={styles.navigation}>
+        <a name="services"></a>
         <nav>
           <a href="#">Our services</a>
           <a href="#">About us</a>

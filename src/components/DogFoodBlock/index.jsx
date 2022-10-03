@@ -7,6 +7,7 @@ import { Button } from "../reusableTemplates/button/index";
 export function DogFoodBlock() {
   return (
     <section className={styles.main}>
+      <a name="products"></a>
       <div className={styles.header}>
         <h2>Dog Nutrients & Food </h2>
       </div>
