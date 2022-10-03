@@ -21,7 +21,7 @@
   margin-top: 20%;
   display: block;
   transform: translate(-50%, -50%);
-  transition: .6s;
+  transition: 0.6s;
   cursor: pointer;
 }
 
@@ -32,54 +32,63 @@
   height: 5px;
   margin: 10px 0;
   border-radius: 30px;
-  transition: .6s;
+  transition: 0.6s;
 }
 
-.change div:nth-child(1) {
-  transform: translateY(57px) rotate(47deg);
-  background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, #2626ff, #0d9eff, #ff0d6e, #cf0d6e);
-  animation: mymove 10s linear infinite;
+.header .hamburgerMenu .change1 {
+  animation: stick-1-open 0.6s ease-out forwards;
 }
 
-.change div:nth-child(3) {
-  transform: translateY(-30px) rotate(-48deg);
-  background-size: 400% 400%;
-  background-image: linear-gradient(-45deg, #2626ff, #0d9eff, #ff0d6e, #cf0d6e);
-  animation: myMove 10s linear infinite;
+.header .hamburgerMenu .change2 {
+  animation: stick-2-open 0.6s linear forwards;
 }
 
-@keyframes mymove {
+.header .hamburgerMenu .change3 {
+  animation: stick-3-open 0.6s linear forwards;
+}
+
+@keyframes stick-1-open {
   0% {
-    background-position: 0% 50%;
+    width: 80px;
   }
-
-  50% {
-    background-position: 100% 50%;
+  40% {
+    background-color: #ffad14;
+    width: 8px;
+    transform: translate(40px, 0px);
   }
-
+  75%,
+  80% {
+    width: 8px;
+    transform: translate(40px, -50px);
+    animation-timing-function: cubic-bezier(0, 1, 1, 1);
+  }
   100% {
-    background-position: 0% 50%;
+    background-color: #ffad14;
+    width: 8px;
+    transform: translate(35px, 46px);
   }
 }
 
-@keyframes myMove {
-  0% {
-    background-position: 0% 50%;
+@keyframes stick-2-open {
+  80% {
+    background-color: #fdd32d;
+    transform: translate(0px, 0px) rotate(0deg);
   }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
   100% {
-    background-position: 0% 50%;
+    background-color: #ff3f14;
+    transform: translate(8px, 0px) rotate(40deg);
   }
 }
 
-.change div:nth-child(2) {
-  opacity: 0;
-  background: lightblue;
+@keyframes stick-3-open {
+  80% {
+    background-color: #fdef2d;
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    background-color: #ff4714;
+    transform: translate(8px, -23px) rotate(-40deg);
+  }
 }
 
 @media (min-width: 315px) and (max-width: 480px) {

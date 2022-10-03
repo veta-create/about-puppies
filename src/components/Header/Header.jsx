@@ -14,9 +14,9 @@ function Header(props) {
             switchBurgerState(burgerState ? false : true);
           }}
         >
-          <div className={styles.hamburgerBar}></div>
-          <div className={styles.hamburgerBar}></div>
-          <div className={styles.hamburgerBar}></div>
+          <div className={burgerState ? styles.change1 : ""}></div>
+          <div className={burgerState ? styles.change2 : ""}></div>
+          <div className={burgerState ? styles.change3 : ""}></div>
         </div>
         <nav className={burgerState ? styles.burgerActive : styles.burgerHide}>
           <ul>
