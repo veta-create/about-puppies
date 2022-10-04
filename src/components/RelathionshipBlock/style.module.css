@@ -61,6 +61,10 @@
     padding-left: 5%;
   }
 
+  .services .navContainer nav {
+    justify-content: space-around;
+  }
+
   .main {
     background-image: url(../../assets/images/background.png);
   }
