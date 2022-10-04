@@ -1,5 +1,5 @@
 @media (min-width: 320px) and (max-width: 1020px) {
-  .li {
+  .food {
     height: auto;
     margin-bottom: 20px;
   }
@@ -20,16 +20,16 @@
     margin-top: 100px;
   }
 
-  li {
+  .food {
     height: 570px;
   }
 }
 
-li {
+.food {
   list-style-type: none;
 }
 
-li {
+.food {
   width: 70%;
   font-family: var(--base-font-fam);
   font-size: 1.3rem;

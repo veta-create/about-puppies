@@ -191,28 +191,30 @@
 
 .header .navigationBurger {
   z-index: 2;
- width: 100%;
+  width: 100%;
 }
 
 .header .navigationBurger nav ul {
+  width: 100%;
   padding: 0;
 }
 
-.header .navigationBurger nav ul li {
+.header .navigationBurger nav ul .link {
   border: 1px solid rgb(97, 96, 96);
   list-style-type: none;
   padding: 10px 0px;
+  margin: 0;
   font-weight: bold;
 
   background-color: rgba(255, 255, 255, 0.893);
 }
 
-.header .navigationBurger nav ul li a {
+.header .navigationBurger nav ul .link a {
   text-decoration: none;
   color: #000;
 }
 
-.header .navigationBurger nav ul li a:hover {
+.header .navigationBurger nav ul .link a:hover {
   color: var(--header-navigation-hover);
 }
 

@@ -20,25 +20,25 @@ function Header(props) {
         </div>
         <nav className={burgerState ? styles.burgerActive : styles.burgerHide}>
           <ul>
-            <li>
+            <li className={styles.link}>
               <a href="#services">Our services</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#aboutUs">About us</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#products">Products</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#customers">Pet care</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#contacts">Contacts</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#">Sigh in</a>
             </li>
-            <li>
+            <li className={styles.link}>
               <a href="#">Register</a>
             </li>
           </ul>

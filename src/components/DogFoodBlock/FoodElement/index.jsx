@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 
 export function FoodElement(props) {
   return (
-    <li>
+    <li className={styles.food}>
       <div className={styles.card}>
         <img alt="food" src={props.productImg} />
         <a href="#">{props.name}</a>
