@@ -229,7 +229,7 @@
 }
 
 .main {
-  overflow: auto;
+  overflow: visible;
   background-color: #f6faf9;
 }
 
