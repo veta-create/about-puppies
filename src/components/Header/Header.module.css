@@ -254,7 +254,7 @@
 
 .header .navigationBurger .burgerActive {
   display: block;
-  margin-top: 170%;
+  margin-top: 180%;
   z-index: 2;
 }
 
