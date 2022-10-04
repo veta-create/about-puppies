@@ -89,21 +89,23 @@
 
 .header .hamburgerMenu {
   display: block;
-  margin-top: 45%;
-  float: right;
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
   cursor: pointer;
 }
 
 .header .hamburgerMenu div {
-  width: 40px;
-  padding: 0 15px;
-  background: rgb(24, 0, 0);
-  height: 5px;
-  margin: 10px 0;
-  border-radius: 30px;
-  transition: 0.6s;
+  width: 80px;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color:  #000;
+  display: inline-block;
 }
 
 .header .hamburgerMenu .change1 {
@@ -187,15 +189,11 @@
   margin-left: 40%;
 }
 
-.header .navigationBurger img {
-  margin-left: 80%;
-}
-
 .header .navigationBurger nav ul li {
   border: 1px solid rgb(97, 96, 96);
   list-style-type: none;
 
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.893);
 }
 
 .header .navigationBurger nav ul li a {
@@ -256,6 +254,8 @@
 
 .header .navigationBurger .burgerActive {
   display: block;
+  margin-top: 170%;
+  z-index: 2;
 }
 
 .header .navigationBurger .burgerHide {
