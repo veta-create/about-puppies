@@ -14,17 +14,8 @@
     flex-direction: column;
   }
 
-  .main .products ul li {
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .main .discount .view {
     display: none;
-  }
-
-  .main .products ul .card a {
-    margin-top: 10px;
   }
 }
 
@@ -40,10 +31,6 @@
 
   .main .discount .offer {
     margin-top: 3%;
-  }
-
-  .main .products ul .card a {
-    margin-top: 100px;
   }
 
   .main .discount .view {
@@ -63,14 +50,6 @@
 
   .main .discount .offer {
     margin-top: 3%;
-  }
-
-  .main .products ul .card a {
-    margin-top: 100px;
-  }
-
-  .main .products ul li {
-    height: 570px;
   }
 
   .main .discount .view {
@@ -127,19 +106,8 @@
   justify-content: space-around;
 }
 
-.main .products ul li {
-  list-style-type: none;
-}
-
-.main .products ul li {
-  width: 70%;
-  font-family: var(--base-font-fam);
-  font-size: 1.3rem;
-
-  color: var(--base-color);
+.main .products ul li:nth-child(1) {
   background-image: url(../../assets/images/pink-background.svg);
-  background-repeat: no-repeat;
-  background-position: 0 52%;
 }
 
 .main .products ul li:nth-child(2) {
@@ -152,40 +120,4 @@
 
 .main .products ul li:nth-child(3) img {
   margin-top: -10px;
-}
-
-.main .products ul .card button {
-  width: 190px;
-  height: 55px;
-  font-size: 22px;
-  margin-left: 10%;
-  cursor: pointer;
-
-  color: #124c5f;
-  background-color: #fff;
-  border: 2px solid #124c5f;
-  border-radius: 5px;
-}
-
-.main .products ul .card img {
-  margin-left: 10%;
-  margin-top: 10px;
-}
-
-.main .products ul .card button:hover {
-  font-size: 1.5rem;
-}
-
-.main .products ul .card a {
-  display: block;
-  margin-left: 10%;
-  font-size: 1.7rem;
-  text-decoration: none;
-
-  color: #000;
-}
-
-.main .products ul .card p {
-  margin-top: 0;
-  margin-left: 10%;
 }
