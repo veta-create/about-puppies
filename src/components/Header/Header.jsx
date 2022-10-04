@@ -35,6 +35,12 @@ function Header(props) {
             <li>
               <a href="#contacts">Contacts</a>
             </li>
+            <li>
+              <a href="#">Sigh in</a>
+            </li>
+            <li>
+              <a href="#">Register</a>
+            </li>
           </ul>
         </nav>
       </div>
