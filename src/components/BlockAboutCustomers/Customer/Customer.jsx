@@ -14,13 +14,13 @@ export function Customer(props) {
           <p>{props.text}</p>
           <div className={styles.bones}>
             <ul>
-              {props.ratingBones.map((e) => {
+              {props.ratingBones.map((e, index) => {
                 return e === true ? (
-                  <li className={styles.bone}>
+                  <li key={index} className={styles.bone}>
                     <img alt="full bone" src={fullBone} />
                   </li>
                 ) : (
-                  <li className={styles.bone}>
+                  <li key={index} className={styles.bone}>
                     <img alt="bone" src={bone} />
                   </li>
                 );
