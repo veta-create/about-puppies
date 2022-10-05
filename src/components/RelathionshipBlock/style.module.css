@@ -18,14 +18,13 @@
   background-repeat: var(--bg-repeat);
 }
 
-@media (min-width: 315px) and (max-width: 1000px) {
+@media (min-width: 315px) and (max-width: 720px) {
   .main {
     background-image: url(../../assets/images/background.png);
   }
 
   .description {
     margin-left: 10%;
-    width: 100%;
   }
 
   .description h1 {
@@ -61,7 +60,7 @@
   }
 }
 
-@media (min-width: 1020px) and (max-width: 1270px) {
+@media (min-width: 725px) and (max-width: 1270px) {
   .description {
     margin-left: 12%;
   }
@@ -125,7 +124,7 @@
   }
 
   .services .navContainer nav div a {
-    margin-top: 85%;
+    margin-top: 10%;
   }
 }
 
