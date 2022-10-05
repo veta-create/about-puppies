@@ -27,10 +27,6 @@
 }
 
 @media (min-width: 1220px) and (max-width: 2560px) {
-  .main {
-    height: 800px;
-  }
-
   .main .cards {
     width: 85%;
     flex-direction: row;
@@ -58,15 +54,15 @@
 
 .main .cards li .yellowBackground {
   background-image: url(../../assets/images/rect-yellow-bg.svg);
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
-.main .cards li .pinkBackground{
+.main .cards li .pinkBackground {
   background-image: url(../../assets/images/rect-pink-bg.svg);
-  background-size: 100%
+  background-size: 100% 100%;
 }
 
 .main .cards li .violetBackground {
   background-image: url(../../assets/images/rect-blue-bg.svg);
-  background-size: 100%
+  background-size: 100% 100%;
 }

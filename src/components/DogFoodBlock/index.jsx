@@ -8,16 +8,19 @@ import { FoodElement } from "./FoodElement";
 export function DogFoodBlock() {
   const foodData = [
     {
+      id: 1,
       productImg: food1,
       name: "Drools|3KG",
       text: "Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food",
     },
     {
+      id: 2,
       productImg: food2,
       name: "Canine Greek 4KG",
       text: "Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food",
     },
     {
+      id: 3,
       productImg: food3,
       name: "Biscork Biscuits",
       text: "Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food",
@@ -42,7 +45,7 @@ export function DogFoodBlock() {
       <div className={styles.products}>
         <ul>
           {foodData.map((e) => {
-            return <FoodElement productImg={e.productImg} name={e.name} text={e.text} />;
+            return <FoodElement key={e.id} productImg={e.productImg} name={e.name} text={e.text} />;
           })}
         </ul>
       </div>

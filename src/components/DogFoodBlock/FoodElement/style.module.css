@@ -1,6 +1,10 @@
 @media (min-width: 320px) and (max-width: 1020px) {
+<<<<<<< HEAD
   .li {
     width: 100%;
+=======
+  .food {
+>>>>>>> eb53dd939491a60fca57aebb7dd243bf9b6e8b6d
     height: auto;
     margin-bottom: 20px;
   }
@@ -25,14 +29,21 @@
     margin-top: 100px;
   }
 
-  li {
+  .food {
     height: 570px;
     width: 70%;
   }
 }
 
-li {
+.food {
   list-style-type: none;
+<<<<<<< HEAD
+=======
+}
+
+.food {
+  width: 70%;
+>>>>>>> eb53dd939491a60fca57aebb7dd243bf9b6e8b6d
   font-family: var(--base-font-fam);
   font-size: 1.3rem;
 

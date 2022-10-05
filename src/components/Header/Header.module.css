@@ -18,6 +18,11 @@
   .header .navigation {
     display: none;
   }
+
+  .header .auth .sign,
+  .header .auth .register {
+    display: none;
+  }
 }
 
 @media (min-width: 315px) and (max-width: 1080px) {
@@ -90,8 +95,8 @@
 .header .hamburgerMenu {
   display: block;
   position: absolute;
-  top: 5%;
-  right: 2%;
+  top: 10px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +109,7 @@
   height: 8px;
   border-radius: 4px;
   margin-bottom: 15px;
-  background-color:  #000;
+  background-color: #000;
   display: inline-block;
 }
 
@@ -186,22 +191,30 @@
 
 .header .navigationBurger {
   z-index: 2;
-  margin-left: 40%;
+  width: 100%;
 }
 
-.header .navigationBurger nav ul li {
+.header .navigationBurger nav ul {
+  width: 100%;
+  padding: 0;
+}
+
+.header .navigationBurger nav ul .link {
   border: 1px solid rgb(97, 96, 96);
   list-style-type: none;
+  padding: 10px 0px;
+  margin: 0;
+  font-weight: bold;
 
   background-color: rgba(255, 255, 255, 0.893);
 }
 
-.header .navigationBurger nav ul li a {
+.header .navigationBurger nav ul .link a {
   text-decoration: none;
   color: #000;
 }
 
-.header .navigationBurger nav ul li a:hover {
+.header .navigationBurger nav ul .link a:hover {
   color: var(--header-navigation-hover);
 }
 
@@ -254,7 +267,7 @@
 
 .header .navigationBurger .burgerActive {
   display: block;
-  margin-top: 170%;
+  margin-top: 140%;
   z-index: 2;
 }
 

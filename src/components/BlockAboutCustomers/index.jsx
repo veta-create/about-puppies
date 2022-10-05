@@ -23,6 +23,7 @@ let ratingCalc = (rating) => {
 
 let customersData = [
   {
+    id: 1,
     customerImage: customer1,
     names: "Anna & Tobby",
     text: "Amazing Products & Delivery on time.",
@@ -31,6 +32,7 @@ let customersData = [
     background: styles.yellowBackground,
   },
   {
+    id: 2,
     customerImage: customer2,
     names: "Christine & Tom",
     text: "Love the overall Shopping experience!",
@@ -39,6 +41,7 @@ let customersData = [
     background: styles.pinkBackground,
   },
   {
+    id: 3,
     customerImage: customer3,
     names: "Sindy & Kitch",
     text: "Kitch is love food from the pup-hub",
@@ -59,6 +62,7 @@ export function BlockAboutCustomers(props) {
         {customersData.map((e) => {
           return (
             <Customer
+              key={e.id}
               background={e.background}
               customerImage={e.customerImage}
               names={e.names}

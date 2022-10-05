@@ -12,16 +12,23 @@
 }
 
 .main {
-  background-image: url(../../assets/images/dog1.png),
-    url(../../assets/images/background.png);
+  background-image: url(../../assets/images/dog1.png), url(../../assets/images/background.png);
   background-size: auto, 100%;
   background-position: top right;
   background-repeat: var(--bg-repeat);
 }
 
-@media (min-width: 315px) and (max-width: 1000px) {
+@media (min-width: 315px) and (max-width: 720px) {
   .main {
     background-image: url(../../assets/images/background.png);
+  }
+
+  .description {
+    margin-left: 10%;
+  }
+
+  .description h1 {
+    font-size: 1.6em;
   }
 
   .services {
@@ -53,13 +60,25 @@
   }
 }
 
-@media (min-width: 1020px) and (max-width: 1200px) {
+@media (min-width: 725px) and (max-width: 1270px) {
+  .description {
+    margin-left: 12%;
+  }
+
   .services {
     padding-left: 5%;
   }
 
+  .services .navContainer nav {
+    justify-content: space-around;
+  }
+
   .main {
     background-image: url(../../assets/images/background.png);
+  }
+
+  .description h1 {
+    font-size: 3em;
   }
 
   .main .description {
@@ -73,13 +92,23 @@
   }
 }
 
-@media (min-width: 1220px) and (max-width: 12450px) {
+@media (min-width: 1280px) and (max-width: 1650px) {
+  .services .navContainer nav div a {
+    margin-top: 95%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 12450px) {
+  .description {
+    margin-left: 12%;
+  }
+
   .services {
     padding-left: 5%;
   }
 
-  .services .navContainer nav div a {
-    margin-top: 85%;
+  .description h1 {
+    font-size: 3em;
   }
 
   .services .navContainer nav div {
@@ -93,6 +122,10 @@
   .services .navContainer nav div {
     height: 225px;
   }
+
+  .services .navContainer nav div a {
+    margin-top: 10%;
+  }
 }
 
 .relationship {
@@ -103,7 +136,6 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 12%;
   padding-top: 8%;
 }
 
@@ -114,14 +146,13 @@
 .description h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3em;
   font-family: var(--header-font-fam);
 }
 
 .description p {
   margin-top: 32px;
   margin-bottom: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: var(--base-font-fam);
   color: var(--base-color);
 }
@@ -189,8 +220,7 @@
 }
 
 .services .navContainer nav .healthcare {
-  background-image: url(../../assets/images/healthcare.svg),
-    linear-gradient(#ffee94, #fff 80%);
+  background-image: url(../../assets/images/healthcare.svg), linear-gradient(#ffee94, #fff 80%);
   background-repeat: var(--bg-repeat);
   background-position: var(--bg-position);
 }
@@ -202,8 +232,7 @@
 }
 
 .services .navContainer nav .training {
-  background-image: url(../../assets/images/training.svg),
-    linear-gradient(#ffee94, #fff 80%);
+  background-image: url(../../assets/images/training.svg), linear-gradient(#ffee94, #fff 80%);
   background-repeat: var(--bg-repeat);
   background-position: var(--bg-position);
 }
