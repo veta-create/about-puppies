@@ -1,10 +1,9 @@
 @media (min-width: 320px) and (max-width: 1020px) {
-<<<<<<< HEAD
   .li {
     width: 100%;
-=======
+  }
+
   .food {
->>>>>>> eb53dd939491a60fca57aebb7dd243bf9b6e8b6d
     height: auto;
     margin-bottom: 20px;
   }
@@ -26,24 +25,25 @@
 
 @media (min-width: 1220px) and (max-width: 2560px) {
   .card a {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .food {
     height: 570px;
     width: 70%;
   }
+
+  .card p {
+    width: 50%;
+  }
 }
 
 .food {
   list-style-type: none;
-<<<<<<< HEAD
-=======
 }
 
 .food {
   width: 70%;
->>>>>>> eb53dd939491a60fca57aebb7dd243bf9b6e8b6d
   font-family: var(--base-font-fam);
   font-size: 1.3rem;
 
@@ -85,6 +85,10 @@ li .card {
   text-decoration: none;
 
   color: #000;
+}
+
+.card p {
+  margin-left: 10%;
 }
 
 .main .products ul .card p {
