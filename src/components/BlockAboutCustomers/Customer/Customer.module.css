@@ -1,14 +1,4 @@
-@media (min-width: 320px) and (max-width: 1020px) {
-  li .customerCard {
-    width: 100%;
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-  li .customerCard {
-    width: 300px;
-  }
-
+@media (min-width: 1024px) and (max-width: 1200px) {
   .main .cards li .customerCard {
     width: 360px;
   }
@@ -22,6 +12,7 @@
 
 li {
   list-style-type: none;
+  width: 100%;
 }
 
 .customerCard .customerCard {
