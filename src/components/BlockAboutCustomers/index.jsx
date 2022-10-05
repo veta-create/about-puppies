@@ -59,6 +59,103 @@ export function BlockAboutCustomers(props) {
         <h2>Happy Customer</h2>
       </div>
       <ul className={styles.cards}>
+<<<<<<< HEAD
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
+              <img src={customer1} />
+            </div>
+            <div className={styles.rating}>
+              <div className={styles.names}>Anna & Tobby</div>
+              <p>Amazing Products & Delivery on time.</p>
+              <div className={styles.bones}>
+                <ul>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={bone} />
+                  </li>
+                </ul>
+                <div className={styles.value}>4.2/5</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
+              <img src={customer2} />
+            </div>
+            <div className={styles.rating}>
+              <div className={styles.names}>Christine & Tom</div>
+              <p>Love the overall Shopping experience!</p>
+              <div className={styles.bones}>
+                <ul>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={bone} />
+                  </li>
+                </ul>
+                <div className={styles.value}>4.2/5</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li className={styles.customerCard}>
+          <div className={styles.customerCard}>
+            <div className={styles.customerImage}>
+              <img src={customer3} />
+            </div>
+            <div className={styles.rating}>
+              <div className={styles.names}>Sindy & Kitch</div>
+              <p>Kitch is love food from the pup-hub</p>
+              <div className={styles.bones}>
+                <ul>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={fullBone} />
+                  </li>
+                  <li className={styles.bone}>
+                    <img src={bone} />
+                  </li>
+                </ul>
+                <div className={styles.value}>4.2/5</div>
+              </div>
+            </div>
+          </div>
+        </li>
+=======
         {customersData.map((e) => {
           return (
             <Customer
@@ -72,6 +169,7 @@ export function BlockAboutCustomers(props) {
             />
           );
         })}
+>>>>>>> ead00950adeb6a0e595e89315d6b22d56e3ea802
       </ul>
       <Button tag="a" text="Explore more" />
     </section>
