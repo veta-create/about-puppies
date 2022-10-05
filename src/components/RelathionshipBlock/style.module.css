@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1020px) and (max-width: 1200px) {
+@media (min-width: 1020px) and (max-width: 1270px) {
   .description {
     margin-left: 12%;
   }
@@ -93,7 +93,13 @@
   }
 }
 
-@media (min-width: 1220px) and (max-width: 12450px) {
+@media (min-width: 1280px) and (max-width: 1650px) {
+  .services .navContainer nav div a {
+    margin-top: 95%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 12450px) {
   .description {
     margin-left: 12%;
   }
@@ -106,10 +112,6 @@
     font-size: 3em;
   }
 
-  .services .navContainer nav div a {
-    margin-top: 85%;
-  }
-
   .services .navContainer nav div {
     margin: 0 2%;
   }
@@ -120,6 +122,10 @@
 
   .services .navContainer nav div {
     height: 225px;
+  }
+
+  .services .navContainer nav div a {
+    margin-top: 85%;
   }
 }
 
