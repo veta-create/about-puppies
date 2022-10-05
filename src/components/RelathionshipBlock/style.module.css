@@ -23,6 +23,11 @@
     background-image: url(../../assets/images/background.png);
   }
 
+  .description {
+    margin-left: 10%;
+    width: 100%;
+  }
+
   .description h1 {
     font-size: 1.6em;
   }
@@ -57,6 +62,10 @@
 }
 
 @media (min-width: 1020px) and (max-width: 1200px) {
+  .description {
+    margin-left: 12%;
+  }
+
   .services {
     padding-left: 5%;
   }
@@ -85,6 +94,10 @@
 }
 
 @media (min-width: 1220px) and (max-width: 12450px) {
+  .description {
+    margin-left: 12%;
+  }
+
   .services {
     padding-left: 5%;
   }
@@ -118,7 +131,6 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 12%;
   padding-top: 8%;
 }
 
