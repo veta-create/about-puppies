@@ -59,7 +59,6 @@ export function BlockAboutCustomers(props) {
         <h2>Happy Customer</h2>
       </div>
       <ul className={styles.cards}>
-<<<<<<< HEAD
         <li className={styles.customerCard}>
           <div className={styles.customerCard}>
             <div className={styles.customerImage}>
@@ -155,7 +154,6 @@ export function BlockAboutCustomers(props) {
             </div>
           </div>
         </li>
-=======
         {customersData.map((e) => {
           return (
             <Customer
@@ -169,7 +167,6 @@ export function BlockAboutCustomers(props) {
             />
           );
         })}
->>>>>>> ead00950adeb6a0e595e89315d6b22d56e3ea802
       </ul>
       <Button tag="a" text="Explore more" />
     </section>
