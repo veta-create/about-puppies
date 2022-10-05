@@ -1,31 +1,45 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/images/logo.png";
 
 function Header(props) {
+  const [burgerState, switchBurgerState] = useState(false);
+
   return (
     <section className={styles.header}>
       <div className={styles.navigationBurger}>
-        <div className={styles.hamburgerMenu} onclick="myFunction(this)">
-          <div className={styles.hamburgerBar}></div>
-          <div className={styles.hamburgerBar}></div>
-          <div className={styles.hamburgerBar}></div>
+        <div
+          className={styles.hamburgerMenu}
+          onClick={() => {
+            switchBurgerState(burgerState ? false : true);
+          }}
+        >
+          <div className={burgerState ? styles.change1 : ""}></div>
+          <div className={burgerState ? styles.change2 : ""}></div>
+          <div className={burgerState ? styles.change3 : ""}></div>
         </div>
-        <nav>
+        <nav className={burgerState ? styles.burgerActive : styles.burgerHide}>
           <ul>
-            <li>
-              <a href="#">Our services</a>
+            <li className={styles.link}>
+              <a href="#services">Our services</a>
             </li>
-            <li>
-              <a href="#">About us</a>
+            <li className={styles.link}>
+              <a href="#aboutUs">About us</a>
             </li>
-            <li>
-              <a href="#">Products</a>
+            <li className={styles.link}>
+              <a href="#products">Products</a>
             </li>
-            <li>
-              <a href="#">Pet care</a>
+            <li className={styles.link}>
+              <a href="#customers">Pet care</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
+            <li className={styles.link}>
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li className={styles.link}>
+              <a href="#">Sigh in</a>
+            </li>
+            <li className={styles.link}>
+              <a href="#">Register</a>
             </li>
           </ul>
         </nav>
@@ -34,6 +48,7 @@ function Header(props) {
         <img alt="logo" src={logo}></img>
       </div>
       <div className={styles.navigation}>
+        <a name="services"></a>
         <nav>
           <a href="#">Our services</a>
           <a href="#">About us</a>

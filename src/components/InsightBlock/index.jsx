@@ -1,4 +1,5 @@
 import styles from "./style.module.css";
+import { Button } from "../reusableTemplates/button/index";
 
 export function InsightBlock() {
   return (
@@ -13,9 +14,9 @@ export function InsightBlock() {
           Sweet roll ice cream powder candy canes ice cream
           <br /> donut pudding biscuit ice cream.biscuit caramels topb
         </p>
-        <a href="#">
-          <span>Explore more</span>
-        </a>
+        <div className={styles.link}>
+          <Button tag="a" text="Explore more" />
+        </div>
       </div>
     </section>
   );

@@ -10,12 +10,14 @@
 @media (min-width: 315px) and (max-width: 1000px) {
   .learn {
     display: none;
-  }
-  .learn {
     background-image: none;
   }
 
-  .description button {
+  .description h1 {
+    font-size: 1.6rem;
+  }
+
+  .description .link {
     margin-left: auto;
     margin-right: auto;
   }
@@ -27,12 +29,15 @@
 
 @media (min-width: 1020px) and (max-width: 1200px) {
   .learn {
-    background-image: url(../../assets/images/food.svg),
-      url(../../assets/images/dog2.png);
+    background-image: url(../../assets/images/food.svg), url(../../assets/images/dog2.png);
   }
 
   .description {
     padding-top: 7%;
+  }
+
+  .description h1 {
+    font-size: 3rem;
   }
 
   .main {
@@ -42,8 +47,7 @@
 
 @media (min-width: 1220px) and (max-width: 2560px) {
   .learn {
-    background-image: url(../../assets/images/food.svg),
-      url(../../assets/images/dog2.png);
+    background-image: url(../../assets/images/food.svg), url(../../assets/images/dog2.png);
   }
 
   .description {
@@ -52,6 +56,10 @@
 
   .main {
     height: 700px;
+  }
+
+  .description h1 {
+    font-size: 3rem;
   }
 }
 
@@ -67,46 +75,23 @@
   background-position: right top;
 }
 
+.description .link {
+  margin-right: 70%;
+  margin-top: 5%;
+}
+
 .description h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3rem;
   font-family: var(--header-font-fam);
 }
 
 .description p {
   margin-top: 32px;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--base-font-fam);
   color: var(--base-color);
-}
-
-.description button {
-  display: flex;
-  align-items: center;
-  margin-top: 48px;
-  height: 80px;
-  padding: 18px 36px;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: var(--button-font-fam);
-
-  color: #fff;
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.description button:hover {
-  transform: scale(1.1);
-  font-size: 1.3em;
-}
-
-.description button::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
 }
 
 .learn {

@@ -1,0 +1,84 @@
+@media (min-width: 320px) and (max-width: 1020px) {
+  li .customerCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  li .customerCard {
+    width: 300px;
+  }
+
+  .main .cards li .customerCard {
+    width: 360px;
+  }
+}
+
+@media (min-width: 1220px) and (max-width: 2560px) {
+  li .customerCard {
+    width: 360px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+.customerCard .customerCard {
+  height: 480px;
+  font-family: "Rubik", sans-serif;
+}
+
+.customerCard .customerCard .customerImage {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 304px;
+
+  background-repeat: no-repeat;
+  background-position: 0 70px;
+}
+
+li .customerCard .rating {
+  padding-bottom: 35px;
+
+  background-color: #124c5f;
+}
+
+.customerCard .customerCard .rating .names {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+
+  color: #ddca69;
+}
+
+.customerCard .customerCard .rating p {
+  text-align: center;
+  font-size: 0.9rem;
+
+  color: #fff;
+}
+
+.customerCard .customerCard .rating .bones {
+  display: flex;
+  flex-direction: row;
+}
+
+.customerCard .customerCard .rating .bones ul {
+  display: flex;
+  width: 60%;
+  padding: 0;
+  margin-left: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.customerCard .customerCard .rating .bones .value {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  margin-left: 10px;
+
+  color: #fff;
+}

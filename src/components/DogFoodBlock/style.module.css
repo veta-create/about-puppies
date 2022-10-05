@@ -14,17 +14,8 @@
     flex-direction: column;
   }
 
-  .main .products ul li {
-    height: auto;
-    margin-bottom: 20px;
-  }
-
   .main .discount .view {
     display: none;
-  }
-
-  .main .products ul .card a {
-    margin-top: 10px;
   }
 }
 
@@ -38,12 +29,8 @@
     height: 570px;
   }
 
-  .main .discount div {
+  .main .discount .offer {
     margin-top: 3%;
-  }
-
-  .main .products ul .card a {
-    margin-top: 100px;
   }
 
   .main .discount .view {
@@ -61,16 +48,8 @@
     align-items: stretch;
   }
 
-  .main .discount div {
+  .main .discount .offer {
     margin-top: 3%;
-  }
-
-  .main .products ul .card a {
-    margin-top: 100px;
-  }
-
-  .main .products ul li {
-    height: 570px;
   }
 
   .main .discount .view {
@@ -95,12 +74,12 @@
   flex-direction: row;
 }
 
-.main .discount div {
+.main .discount .offer {
   margin-top: 3%;
   margin-left: 12%;
 }
 
-.main .discount div a {
+.main .discount .offer a {
   font-family: var(--header-font-fam);
   font-size: 2.5rem;
   text-decoration: none;
@@ -108,37 +87,14 @@
   color: #000;
 }
 
-.main .discount div span {
+.main .discount .offer span {
   font-family: "Alegreya", serif;
   font-weight: bold;
 }
 
 .main .discount .view {
-  align-items: center;
-  width: 200px;
-  height: 60px;
-  justify-content: center;
-  margin-top: 3%;
-  margin-left: 35%;
-  cursor: pointer;
-  font-size: 1.2em;
-  font-family: "Alegreya", serif;
-
-  color: #fff;
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: 5px;
-}
-
-.main .discount .view::after {
-  margin-left: 12px;
-  margin-top: 4px;
-  content: url(../../assets/images/arrow.svg);
-}
-
-.main .discount .view:hover {
-  transform: scale(1.1);
-  font-size: 1.3em;
+  margin-top: 30px;
+  margin-left: 30%;
 }
 
 .main .products ul {
@@ -150,19 +106,8 @@
   justify-content: space-around;
 }
 
-.main .products ul li {
-  list-style-type: none;
-}
-
-.main .products ul li {
-  width: 70%;
-  font-family: var(--base-font-fam);
-  font-size: 1.3rem;
-
-  color: var(--base-color);
+.main .products ul li:nth-child(1) {
   background-image: url(../../assets/images/pink-background.svg);
-  background-repeat: no-repeat;
-  background-position: 0 52%;
 }
 
 .main .products ul li:nth-child(2) {
@@ -175,40 +120,4 @@
 
 .main .products ul li:nth-child(3) img {
   margin-top: -10px;
-}
-
-.main .products ul .card button {
-  width: 190px;
-  height: 55px;
-  font-size: 22px;
-  margin-left: 10%;
-  cursor: pointer;
-
-  color: #124c5f;
-  background-color: #fff;
-  border: 2px solid #124c5f;
-  border-radius: 5px;
-}
-
-.main .products ul .card img {
-  margin-left: 10%;
-  margin-top: 10px;
-}
-
-.main .products ul .card button:hover {
-  font-size: 1.5rem;
-}
-
-.main .products ul .card a {
-  display: block;
-  margin-left: 10%;
-  font-size: 1.7rem;
-  text-decoration: none;
-
-  color: #000;
-}
-
-.main .products ul .card p {
-  margin-top: 0;
-  margin-left: 10%;
 }
