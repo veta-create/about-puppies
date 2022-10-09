@@ -1,55 +1,6 @@
 import styles from "./style.module.css";
 import { Button } from "../reusableTemplates/button";
 import { Customer } from "./Customer/Customer";
-import customer1 from "../../assets/images/customer1.png";
-import customer2 from "../../assets/images/customer2.png";
-import customer3 from "../../assets/images/customer3.png";
-
-let ratingCalc = (rating) => {
-  if (rating < 0.5) {
-    return [false, false, false, false, false];
-  } else if (rating >= 0.5 && rating < 1.5) {
-    return [true, false, false, false, false];
-  } else if (rating >= 1.5 && rating < 2.5) {
-    return [true, true, false, false, false];
-  } else if (rating >= 2.5 && rating < 3.5) {
-    return [true, true, true, false, false];
-  } else if (rating >= 3.5 && rating < 4.5) {
-    return [true, true, true, true, false];
-  } else {
-    return [true, true, true, true, true];
-  }
-};
-
-let customersData = [
-  {
-    id: 1,
-    customerImage: customer1,
-    names: "Anna & Tobby",
-    text: "Amazing Products & Delivery on time.",
-    rating: 4.2,
-    ratingBones: ratingCalc(4.2),
-    background: styles.yellowBackground,
-  },
-  {
-    id: 2,
-    customerImage: customer2,
-    names: "Christine & Tom",
-    text: "Love the overall Shopping experience!",
-    rating: 2.5,
-    ratingBones: ratingCalc(2.5),
-    background: styles.pinkBackground,
-  },
-  {
-    id: 3,
-    customerImage: customer3,
-    names: "Sindy & Kitch",
-    text: "Kitch is love food from the pup-hub",
-    rating: 3.9,
-    ratingBones: ratingCalc(3.9),
-    background: styles.violetBackground,
-  },
-];
 
 export function BlockAboutCustomers(props) {
   return (
@@ -59,7 +10,7 @@ export function BlockAboutCustomers(props) {
         <h2>Happy Customer</h2>
       </div>
       <ul className={styles.cards}>
-        {customersData.map((e) => {
+        {props.customersPage.customersData.map((e) => {
           return (
             <Customer
               key={e.id}

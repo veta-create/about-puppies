@@ -6,6 +6,7 @@ import { DogFoodBlock } from "./components/DogFoodBlock/index";
 import { InsightBlock } from "./components/InsightBlock/index";
 import { BlockAboutCustomers } from "./components/BlockAboutCustomers";
 import { Footer } from "./components/Footer";
+import {state} from './redux/state'
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Header burgerStatus={true}/>
       <RelationshipBlock />
       <DogsDoSpeakBlock />
-      <DogFoodBlock />
+      <DogFoodBlock dogFoodPage={state.dogFoodPage}/>
       <InsightBlock />
-      <BlockAboutCustomers />
+      <BlockAboutCustomers customersPage={state.customersPage}/>
       <Footer />
     </div>
   );
