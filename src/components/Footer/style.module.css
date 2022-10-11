@@ -167,6 +167,10 @@
     height: 655px;
   }
 
+  .main .header h2 {
+    padding-top: 10%;
+  }
+
   .main nav {
     grid-template-columns: 40% 60%;
     justify-items: center;
@@ -231,6 +235,10 @@
 @media (min-width: 1500px) and (max-width: 12450px) {
   .main .grid .contacts {
     margin-left: 15%;
+  }
+
+  .main .header h2 {
+    padding-top: 10%;
   }
 }
 
