@@ -41,6 +41,12 @@
   background-position: 85% 0;
 }
 
+.main a {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 10%;
+}
+
 .description {
   display: flex;
   align-items: flex-start;
