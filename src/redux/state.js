@@ -7,20 +7,14 @@ import food2 from "../assets/images/food2.png";
 import food3 from "../assets/images/food3.png";
 
 let ratingCalc = (rating) => {
-  if (rating < 0.5) {
-    return [false, false, false, false, false];
-  } else if (rating >= 0.5 && rating < 1.5) {
-    return [true, false, false, false, false];
-  } else if (rating >= 1.5 && rating < 2.5) {
-    return [true, true, false, false, false];
-  } else if (rating >= 2.5 && rating < 3.5) {
-    return [true, true, true, false, false];
-  } else if (rating >= 3.5 && rating < 4.5) {
-    return [true, true, true, true, false];
-  } else {
-    return [true, true, true, true, true];
-  }
-};
+  if(rating < 0.5) {
+    return Array(5).fill(false)
+  };
+
+  return Array(5).fill(false).map((_, index) => index < Math.floor(rating) ? true : false)
+}
+
+console.log(ratingCalc(4.2))
 
 export let state = {
   customersPage: {
