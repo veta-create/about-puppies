@@ -82,16 +82,21 @@
 
 .description .link {
   margin-right: 70%;
+  margin-left: 20px;
   margin-top: 5%;
 }
 
 .description h1 {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 0;
   margin-bottom: 0;
   font-family: var(--header-font-fam);
 }
 
 .description p {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 32px;
   margin-bottom: 0;
   font-size: 1.3rem;
