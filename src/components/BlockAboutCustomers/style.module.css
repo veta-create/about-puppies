@@ -8,10 +8,10 @@
   }
 
   .main .cards {
+    flex-direction: column;
     width: 100%;
     max-width: 360px;
     padding-left: 0;
-    flex-direction: column;
   }
 }
 
@@ -47,9 +47,9 @@
 
 .main .cards {
   display: flex;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-around;
 }
 
 .main .cards li .yellowBackground {

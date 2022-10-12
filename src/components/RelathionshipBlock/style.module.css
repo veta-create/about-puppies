@@ -13,9 +13,9 @@
 
 .main {
   background-image: url(../../assets/images/dog1.png), url(../../assets/images/background.png);
+  background-repeat: var(--bg-repeat);
   background-size: auto, 100%;
   background-position: top right;
-  background-repeat: var(--bg-repeat);
 }
 
 @media (min-width: 315px) and (max-width: 720px) {
@@ -45,18 +45,18 @@
   }
 
   .main .services .navContainer nav div {
-    height: 150px;
     width: 80%;
     max-width: 300px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
   }
 
   .main .services .navContainer nav {
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
   }
 }
 
@@ -87,8 +87,8 @@
 
   .main .description {
     margin-left: auto;
-    margin-right: auto;
     margin-top: 10%;
+    margin-right: auto;
   }
 
   .services .navContainer nav div {
@@ -102,8 +102,8 @@
   }
 
   .services .navContainer nav div {
-    margin: 0 2%;
     width: 13%;
+    margin: 0 2%;
   }
 }
 
@@ -121,8 +121,8 @@
   }
 
   .services .navContainer nav div {
-    margin: 0 2%;
     width: 13%;
+    margin: 0 2%;
   }
 
   .services .navContainer nav .grooming {
@@ -162,16 +162,17 @@
 .description p {
   margin-top: 32px;
   margin-bottom: 0;
-  font-size: 1.3em;
   font-family: var(--base-font-fam);
+  font-size: 1.3em;
+
   color: var(--base-color);
 }
 
 .services {
-  padding-top: 18%;
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 18%;
 }
 
 .services .navContainer nav {
@@ -183,9 +184,9 @@
   cursor: pointer;
 
   background-color: #fff;
+  box-shadow: 0 0 10px var(--box-shadow-color);
   border: 1px solid var(--border-color);
   border-radius: 25px;
-  box-shadow: 0 0 10px var(--box-shadow-color);
 }
 
 .services .navContainer nav div:hover {
@@ -198,8 +199,8 @@
 
 .services .navContainer nav div a {
   display: block;
-  font-size: 1.5em;
   font-family: var(--nav-font-fam);
+  font-size: 1.5em;
   text-align: center;
   text-decoration: none;
 
@@ -207,8 +208,8 @@
 }
 
 .services .header {
-  margin-bottom: 3%;
   margin-left: 8%;
+  margin-bottom: 3%;
 }
 
 .services .header::after {
@@ -218,8 +219,8 @@
 }
 
 .services .header h1 {
-  font-size: 1.7em;
   font-family: var(--header-font-fam);
+  font-size: 1.7em;
 }
 
 .services .navContainer nav .grooming {
