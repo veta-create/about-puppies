@@ -160,11 +160,17 @@
   width: 100%;
 }
 
+.header .navigationBurger nav {
+  height: 100%;
+  background-color: #fff;
+}
+
 .header .navigationBurger nav ul {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: calc(100% - 80px);
+  margin-top: 40%;
   padding: 0;
 }
 
@@ -172,7 +178,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  margin-bottom: 10%;
   list-style-type: none;
   font-weight: bold;
   font-size: 1.2rem;

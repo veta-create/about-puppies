@@ -36,7 +36,7 @@ function Header(props) {
               <a href="#contacts">Contacts</a>
             </li>
             <li className={styles.link}>
-              <a href="#">Sigh in</a>
+              <a href="#">Sign in</a>
             </li>
             <li className={styles.link}>
               <a href="#">Register</a>
