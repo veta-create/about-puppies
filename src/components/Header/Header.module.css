@@ -161,7 +161,6 @@
 }
 
 .header .navigationBurger nav {
-  height: 100%;
   background-color: #fff;
 }
 
@@ -169,7 +168,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100% - 80px);
   margin-top: 40%;
   padding: 0;
 }

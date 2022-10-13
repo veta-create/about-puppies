@@ -5,6 +5,15 @@ import logo from "../../assets/images/logo.png";
 function Header(props) {
   const [burgerState, switchBurgerState] = useState(false);
 
+  const handleHamburgerMenuChange = () => {
+    let body = document.querySelector("body");
+    if (document.querySelector("body.rewindBlock") !== null) {
+      body.classList.remove("rewindBlock");
+    } else {
+      body.classList.add("rewindBlock");
+    }
+  };
+
   return (
     <section className={styles.header}>
       <div className={styles.navigationBurger}>
@@ -12,6 +21,7 @@ function Header(props) {
           className={styles.hamburgerMenu}
           onClick={() => {
             switchBurgerState(burgerState ? false : true);
+            handleHamburgerMenuChange();
           }}
         >
           <div className={burgerState ? styles.change1 : ""}></div>
