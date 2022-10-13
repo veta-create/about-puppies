@@ -1,7 +1,7 @@
 :root {
   --header-font-family: "Alegreya", serif;
-  --header-text-transform: uppercase;
   --header-font-weight: bold;
+  --header-text-transform: uppercase;
   --header-navigation-hover: #ffaa00;
   --button-sign-background: #124c5f;
   --button-register-background: #c7e7e1;
@@ -27,10 +27,10 @@
 
 @media (min-width: 315px) and (max-width: 1080px) {
   .header {
-    z-index: 1;
     height: 150px;
     grid-template-columns: 100%;
     grid-template-rows: 10% 50% 40%;
+    z-index: 1;
   }
 
   .header .navigation nav {
@@ -83,9 +83,9 @@
 }
 
 .header {
-  height: 104px;
   display: grid;
   align-items: center;
+  height: 104px;
 }
 
 .header .logo {
@@ -93,28 +93,28 @@
 }
 
 .header .hamburgerMenu {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   margin: auto;
   cursor: pointer;
 }
 
 .header .hamburgerMenu div {
-  background: #e6bf5d;
   display: block;
+  width: 100px;
+  height: 8px;
+  margin-bottom: 16px;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: 0.6s ease all;
   transition: 0.6s ease all;
+
+  background: #e6bf5d;
   border-radius: 8px;
-  height: 8px;
-  width: 100px;
-  margin-bottom: 16px;
 }
 
 .header .hamburgerMenu .change1 {
@@ -141,12 +141,12 @@
 }
 
 .header .navigation a {
-  white-space: nowrap;
   font-family: var(--header-font-family);
-  text-transform: var(--header-text-transform);
-  font-weight: var(--header-font-weight);
   font-size: 100%;
+  font-weight: var(--header-font-weight);
+  text-transform: var(--header-text-transform);
   text-decoration: none;
+  white-space: nowrap;
 
   color: black;
 }
@@ -156,8 +156,8 @@
 }
 
 .header .navigationBurger {
-  z-index: 2;
   width: 100%;
+  z-index: 2;
 }
 
 .header .navigationBurger nav {
@@ -177,15 +177,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
-  list-style-type: none;
-  font-weight: bold;
+  height: 100%;
   font-size: 1.2rem;
+  font-weight: bold;
+  list-style-type: none;
 
   background-color: #fff;
 }
 
 .header .navigationBurger nav ul .link a {
   text-decoration: none;
+
   color: #000;
 }
 
@@ -197,20 +199,19 @@
   display: flex;
   align-content: center;
   align-items: center;
-  height: 104px;
   flex-direction: row;
+  height: 104px;
 }
 
 .header .auth .sign {
-  min-width: 70px;
   width: 35%;
+  min-width: 70px;
   max-width: 150px;
   height: 50px;
   cursor: pointer;
-
   font-family: var(--header-font-family);
-  text-transform: var(--header-text-transform);
   font-weight: var(--header-font-weight);
+  text-transform: var(--header-text-transform);
 
   color: #ffffff;
   background: var(--button-sign-background);
@@ -224,15 +225,14 @@
 }
 
 .header .auth .register {
-  min-width: 70px;
   width: 35%;
+  min-width: 70px;
   max-width: 150px;
   height: 50px;
   cursor: pointer;
-
   font-family: var(--header-font-family);
-  text-transform: var(--header-text-transform);
   font-weight: var(--header-font-weight);
+  text-transform: var(--header-text-transform);
 
   color: var(--button-register-color);
   background: var(--button-register-background);
@@ -241,11 +241,11 @@
 }
 
 .header .navigationBurger .burgerActive {
+  display: block;
   position: absolute;
-  margin-top: 70px;
   width: 100%;
   height: 100%;
-  display: block;
+  margin-top: 70px;
   z-index: 2;
 }
 

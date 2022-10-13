@@ -11,8 +11,8 @@
 }
 
 li {
-  list-style-type: none;
   width: 100%;
+  list-style-type: none;
 }
 
 .customerCard .customerCard {
@@ -21,10 +21,10 @@ li {
 }
 
 .customerCard .customerCard .customerImage {
-  margin: 0;
   display: flex;
   justify-content: center;
   height: 304px;
+  margin: 0;
 
   background-repeat: no-repeat;
   background-position: 0 70px;
@@ -38,15 +38,15 @@ li .customerCard .rating {
 
 .customerCard .customerCard .rating .names {
   padding-top: 10px;
-  text-align: center;
   font-size: 1.7rem;
+  text-align: center;
 
   color: #ddca69;
 }
 
 .customerCard .customerCard .rating p {
-  text-align: center;
   font-size: 0.9rem;
+  text-align: center;
 
   color: #fff;
 }
@@ -58,18 +58,18 @@ li .customerCard .rating {
 
 .customerCard .customerCard .rating .bones ul {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 60%;
   padding: 0;
   margin-left: auto;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .customerCard .customerCard .rating .bones .value {
   display: flex;
   flex-direction: row;
-  margin-right: 10%;
   margin-left: 10px;
+  margin-right: 10%;
 
   color: #fff;
 }
