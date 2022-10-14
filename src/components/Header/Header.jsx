@@ -7,11 +7,7 @@ function Header(props) {
 
   const handleHamburgerMenuChange = () => {
     let body = document.querySelector("body");
-    if (document.querySelector("body.rewindBlock") !== null) {
-      body.classList.remove("rewindBlock");
-    } else {
-      body.classList.add("rewindBlock");
-    }
+    body.classList.toggle("rewind-block")
   };
 
   return (
